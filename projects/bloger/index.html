@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo logo">
+      <a href="#" class="logo__link">
+        <svg aria-hidden="true" class="logo__svg">
+          <use xlink:href="static/img/symbol/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-icon">
+      <a href="#">
+        <img src="static/img/icon/menu.svg" alt="Меню">
+      </a>
+    </div>
+
+    <svg class="btn-close" aria-hidden="true">
+      <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+    </svg>
+
+    <nav class="nav">
+      <ul class="nav__list nav__list--bottom list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Блог
+          </a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Запись в Блоге
+          </a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Помощь
+          </a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Контакты
+          </a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            О нас
+          </a></li>
+      </ul>
+
+      <div class="nav__wrapper-btn">
+        <button type="button" class="nav__btn-check btn">Регистрация</button>
+        <button type="button" class="nav__btn-input btn">Вход</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <h1 class="visually-hidden">Сайт для блогеров</h1>
+  <section class="intro">
+    <div class="container intro__container">
+      <div class="intro__box-text">
+        <h2 class="intro__name title-1">SOCIAL MEDIA</h2>
+        <h2 class="intro__title">Покупай продавай<br class="intro__title-br-desc intro__title-br-desc--1">
+          или обменивайся<br class="intro__title-br-mob"> рекламой<br class="intro__title-br-desc intro__title-br-desc--2">
+          с другими<br class="intro__title-br-mob intro__title-br-mob"> блогерами!</h2>
+        <p class="intro__text">Ты начинающий или уже успешный блогер, хочешь заказывать и продавать <br>рекламу у других таких же как и ты, но теряешься в выборе и поиске подходящих вариантов?</p>
+        <div class="intro__wrap-btn">
+          <button type="button" class="intro__btn btn">
+            <span class="intro__btn-text"></span>
+            <span class="intro__btn-text intro__btn-text--mob">Начать</span>
+          </button>
+        </div>
+      </div>
+      <div class="intro__box-img">
+        <picture>
+          <source media="(max-width: 375px)" srcset="static/img/background/photo-header-mobile.png">
+          <img src="static/img/background/photo-header.png" alt="Ноутбук">
+        </picture>
+        
+      </div>
+    </div><!--/container-->
+  </section>
+
+  <section class="advantage">
+    <div class="container">
+      <h2 class="advantage__name title-1">ПРЕИМУЩЕСТВА</h2>
+      <h2 class="advantage__title title-2">
+        Описание особенностей сервиса
+      </h2>
+      <div class="advantage__wrap">
+        <div class="advantage__block">
+          <div class="advantage__block-img">
+            <img src="static/img/icon/rocket.svg" alt="Ракета">
+          </div>
+          <h3 class="advantage__block-title title-3">Размер аккаунта</h3>
+          <p class="advantage__block-text">
+            Мы понимаем как тяжело начинать и помогаем новичкам
+          </p>
+        </div>
+
+        <div class="advantage__block">
+          <div class="advantage__block-img">
+            <img src="static/img/icon/magnifier.svg" alt="Лупа с диаграммой">
+          </div>
+          <h3 class="advantage__block-title title-3">Удобный поиск</h3>
+          <p class="advantage__block-text">
+            Множество параметров для того чтобы найти то что нужно тебе
+          </p>
+        </div>
+
+        <div class="advantage__block">
+          <div class="advantage__block-img">
+            <img src="static/img/icon/hand.svg" alt="Рука и знак доллара">
+          </div>
+          <h3 class="advantage__block-title title-3">Нет комиссий</h3>
+          <p class="advantage__block-text">
+            Мы предоставляем сервис абсолютно бесплатно
+          </p>
+        </div>
+
+        <div class="advantage__block">
+          <div class="advantage__block-img">
+            <img src="static/img/icon/diagram.svg" alt="Диаграмма">
+          </div>
+          <h3 class="advantage__block-title title-3">Статистика аккаунтов</h3>
+          <p class="advantage__block-text">
+            Поможем не купить рекламу по завышенной цене и избежать обмана
+          </p>
+        </div>
+
+        <div class="advantage__block block-accent">
+          <div class="block-accent__img">
+            <img src="static/img/background/growth.png" alt="Девушка с указкой" width="283" height="201">
+          </div>
+          <h3 class="block-accent__title title-3">Получай рекламные предложения</h3>
+          <p class="block-accent__text">
+            Выбирай и размещай ту рекламу,<br> которая подходит тебе
+          </p>
+          <div class="block-accent__wrap">
+            <button type="button" class="btn btn--color">Подробнее</button>
+          </div>
+        </div>
+      </div><!--/advantage__wrap-->
+    </div><!--/container-->
+  </section>
+
+  <section class="starting">
+    <div class="container">
+      <h2 class="starting__title title-2">
+        Как начать?
+      </h2>
+      <div class="starting__wrap">
+        <div class="starting__block">
+          <div class="starting__block-img">
+            <img src="static/img/starting-block/client-meeting.png" width="274" height="187" alt="Бизнес-встреча">
+          </div>
+          <h3 class="starting__block-title title-3">Выкладывай профиль</h3>
+          <p class="starting__block-text">
+            Чтобы предоставлять статистику аккаунта и рекламные предложения
+          </p>
+          <div class="starting__block-wrap-btn">
+            <button type="button" class="btn btn--brown">
+              <span>Подробнее</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="starting__block">
+          <div class="starting__block-img">
+            <img src="static/img/starting-block/client-meeting.png" width="274" height="187" alt="Бизнес-встреча">
+          </div>
+          <h3 class="starting__block-title title-3">Выкладывай профиль</h3>
+          <p class="starting__block-text">
+            Чтобы предоставлять статистику аккаунта и рекламные предложения
+          </p>
+          <div class="starting__block-wrap-btn">
+            <button type="button" class="btn btn--brown">
+              <span>Подробнее</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="starting__block">
+          <div class="starting__block-img">
+            <img src="static/img/starting-block/client-meeting.png" width="274" height="187" alt="Бизнес-встреча">
+          </div>
+          <h3 class="starting__block-title title-3">Выкладывай профиль</h3>
+          <p class="starting__block-text">
+            Чтобы предоставлять статистику аккаунта и рекламные предложения
+          </p>
+          <div class="starting__block-wrap-btn">
+            <button type="button" class="btn btn--brown">
+              <span>Подробнее</span>
+            </button>
+          </div>
+        </div>
+      </div><!--/starting__wrap-->
+      <div class="starting__inner">
+        <button class="btn btn--orange">Регистрация</button>
+      </div>
+    </div><!--/container-->
+  </section>
+
+  <section class="carousel">
+    <div class="container">
+      <h2 class="carousel__name title-1">КАРУСЕЛЬ</h2>
+      <h2 class="carousel__title title-2">
+        Карусель площадок в сервисе
+      </h2>
+
+      <div class="carousel__wrap-1">
+        <div class="carousel__slider-1 swiper-container">
+          <div class="carousel__slider-social carousel-social swiper-wrapper">
+            <div class="carousel-social__block swiper-slide">
+              <div class="test swiper-container">
+                <ul class="carousel-social__list list-reset swiper-wrapper">
+                  <li class="carousel-social__item carousel-social__item--active swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Tiktok
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">Популярность
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      SMM
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Продажи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="carousel-social__img">
+                <img src="static/img/icon/tiktok.svg" alt="Тик ток">
+              </div>
+              <h3 class="carousel-social__title title-3">TikTok</h3>
+              <p class="carousel-social__text">
+                Не следует, однако забывать, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки.
+              </p>
+              <div class="carousel-social__wrap-btn">
+                <button type="button" class="carousel-social__btn btn  btn--orange">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="carousel-social__block swiper-slide">
+              <div class="test swiper-container">
+                <ul class="carousel-social__list list-reset swiper-wrapper">
+                  <li class="carousel-social__item carousel-social__item--active swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Youtube
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">Популярность
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      SMM
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Продажи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="carousel-social__img">
+                <img src="static/img/icon/youtube.svg" alt="Ютуб">
+              </div>
+              <h3 class="carousel-social__title title-3">YouTube</h3>
+              <p class="carousel-social__text">
+                Не следует, однако забывать, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки.
+              </p>
+              <div class="carousel-social__wrap-btn">
+                <button type="button" class="carousel-social__btn btn  btn--orange">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="carousel-social__block swiper-slide">
+              <div class="test swiper-container">
+                <ul class="carousel-social__list list-reset swiper-wrapper">
+                  <li class="carousel-social__item carousel-social__item--active swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Telegram
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">Популярность
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      SMM
+                    </a>
+                  </li>
+                  <li class="carousel-social__item swiper-slide">
+                    <a href="#" class="carousel-social__link">
+                      Продажи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="carousel-social__img carousel-social__img--height">
+                <img src="static/img/icon/telegram.svg" alt="Телеграм">
+              </div>
+              <h3 class="carousel-social__title title-3">Telegram</h3>
+              <p class="carousel-social__text">
+                Не следует, однако забывать, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки.
+              </p>
+              <div class="carousel-social__wrap-btn">
+                <button type="button" class="carousel-social__btn btn  btn--orange">Подробнее</button>
+              </div>
+            </div>
+          </div><!--/carousel-social-->
+        </div><!--/swiper-container-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!--/carousel__wrap-1-->
+
+      <div class="carousel__wrap-2">
+        <div class="carousel__slider-2 swiper-container">
+          <div class="carousel__slider-reviews carousel-reviews swiper-wrapper">
+            <div class="carousel-rewiews__wrap swiper-slide">
+              <div class="carousel-rewiews__header">
+                <div class="carousel-rewiews__header-left">
+                  <div class="carousel-rewiews__wrap-img">
+                    <img src="static/img/background/user.png" width="105" height="105" alt="Пользователь">
+                  </div>
+                  <div class="carousel-rewiews__desc">
+                    <h3 class="carousel-rewiews__title title-3">Дмитрий Ларин</h3>
+                    <ul class="carousel-rewiews__list">
+                      <li class="carousel-rewiews__item">Новостные видео</li>
+                      <li class="carousel-rewiews__item">Дайджесты</li>
+                      <li class="carousel-rewiews__item">Подкасты</li>
+                      <li class="carousel-rewiews__item">Влоги</li>
+                      <li class="carousel-rewiews__item">Ларин против</li>
+                    </ul>
+                  </div><!--/carousel-rewiews__desc-->
+                </div><!--/carousel-rewiews__header-left-->
+        
+                <div class="carousel-rewiews__header-right">
+                  <div class="carousel-rewiews__view">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="carousel-rewiews__view-text">21 500 000 просмотров</span>
+                  </div>
+                  <div class="carousel-rewiews__subscriber">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#man-user"></use>
+                    </svg>
+                    <span class="carousel-rewiews__subscriber-text">
+                      2 150 000 подписчиков
+                    </span>
+                  </div>
+                  <div class="carousel-rewiews__rating">5</div>
+                </div>
+              
+              </div><!--/carousel-rewiews__header-->
+        
+              <p class="carousel-rewiews__text">
+                Создаем уникальный контент на тематику приключений, блогов, поиску кладов в развлекательном и обучающем формате. Оригинальные ролики, которые не только поднимут настроение, но и дают много полезных знаний. Внимание, ролики на канале выходят каждый день.
+                <br>
+                <br>
+                Приятного просмотра! Если остались вопросы, или есть предложения по сотрудничеству - пишите!
+              </p>
+        
+              <div class="carousel-reviews__footer">
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--color">6750 руб интеграция</div>
+                
+                <div class="carousel-reviews__footer-wrap">
+                  <div class="carousel-reviews__footer-text">4 сделки</div>
+                  <div class="carousel-reviews__footer-text">3 отзыва</div>
+                </div>
+
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--last">Бартер</div>
+              </div>
+            </div><!--/carousel-rewiews__wrap-->
+
+            <div class="carousel-rewiews__wrap swiper-slide">
+              <div class="carousel-rewiews__header">
+                <div class="carousel-rewiews__header-left">
+                  <div class="carousel-rewiews__wrap-img">
+                    <img src="static/img/background/user.png" width="105" height="105" alt="Пользователь">
+                  </div>
+                  <div class="carousel-rewiews__desc">
+                    <h3 class="carousel-rewiews__title title-3">Дмитрий Ларин</h3>
+                    <ul class="carousel-rewiews__list">
+                      <li class="carousel-rewiews__item">Новостные видео</li>
+                      <li class="carousel-rewiews__item">Дайджесты</li>
+                      <li class="carousel-rewiews__item">Подкасты</li>
+                      <li class="carousel-rewiews__item">Влоги</li>
+                      <li class="carousel-rewiews__item">Ларин против</li>
+                    </ul>
+                  </div><!--/carousel-rewiews__desc-->
+                </div><!--/carousel-rewiews__header-left-->
+        
+                <div class="carousel-rewiews__header-right">
+                  <div class="carousel-rewiews__view">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="carousel-rewiews__view-text">21 500 000 просмотров</span>
+                  </div>
+                  <div class="carousel-rewiews__subscriber">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#man-user"></use>
+                    </svg>
+                    <span class="carousel-rewiews__subscriber-text">
+                      2 150 000 подписчиков
+                    </span>
+                  </div>
+                  <div class="carousel-rewiews__rating">5</div>
+                </div>
+              
+              </div><!--/carousel-rewiews__header-->
+        
+              <p class="carousel-rewiews__text">
+                Создаем уникальный контент на тематику приключений, блогов, поиску кладов в развлекательном и обучающем формате. Оригинальные ролики, которые не только поднимут настроение, но и дают много полезных знаний. Внимание, ролики на канале выходят каждый день.
+                <br>
+                <br>
+                Приятного просмотра! Если остались вопросы, или есть предложения по сотрудничеству - пишите!
+              </p>
+        
+              <div class="carousel-reviews__footer">
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--color">6750 руб интеграция</div>
+                
+                <div class="carousel-reviews__footer-wrap">
+                  <div class="carousel-reviews__footer-text">4 сделки</div>
+                  <div class="carousel-reviews__footer-text">3 отзыва</div>
+                </div>
+
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--last">Бартер</div>
+              </div>
+            </div><!--/carousel-rewiews__wrap-->
+
+            <div class="carousel-rewiews__wrap swiper-slide">
+              <div class="carousel-rewiews__header">
+                <div class="carousel-rewiews__header-left">
+                  <div class="carousel-rewiews__wrap-img">
+                    <img src="static/img/background/user.png" width="105" height="105" alt="Пользователь">
+                  </div>
+                  <div class="carousel-rewiews__desc">
+                    <h3 class="carousel-rewiews__title title-3">Дмитрий Ларин</h3>
+                    <ul class="carousel-rewiews__list">
+                      <li class="carousel-rewiews__item">Новостные видео</li>
+                      <li class="carousel-rewiews__item">Дайджесты</li>
+                      <li class="carousel-rewiews__item">Подкасты</li>
+                      <li class="carousel-rewiews__item">Влоги</li>
+                      <li class="carousel-rewiews__item">Ларин против</li>
+                    </ul>
+                  </div><!--/carousel-rewiews__desc-->
+                </div><!--/carousel-rewiews__header-left-->
+        
+                <div class="carousel-rewiews__header-right">
+                  <div class="carousel-rewiews__view">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="carousel-rewiews__view-text">21 500 000 просмотров</span>
+                  </div>
+                  <div class="carousel-rewiews__subscriber">
+                    <svg class="carousel-rewiews__svg" aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#man-user"></use>
+                    </svg>
+                    <span class="carousel-rewiews__subscriber-text">
+                      2 150 000 подписчиков
+                    </span>
+                  </div>
+                  <div class="carousel-rewiews__rating">5</div>
+                </div>
+              
+              </div><!--/carousel-rewiews__header-->
+        
+              <p class="carousel-rewiews__text">
+                Создаем уникальный контент на тематику приключений, блогов, поиску кладов в развлекательном и обучающем формате. Оригинальные ролики, которые не только поднимут настроение, но и дают много полезных знаний. Внимание, ролики на канале выходят каждый день.
+                <br>
+                <br>
+                Приятного просмотра! Если остались вопросы, или есть предложения по сотрудничеству - пишите!
+              </p>
+        
+              <div class="carousel-reviews__footer">
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--color">6750 руб интеграция</div>
+                
+                <div class="carousel-reviews__footer-wrap">
+                  <div class="carousel-reviews__footer-text">4 сделки</div>
+                  <div class="carousel-reviews__footer-text">3 отзыва</div>
+                </div>
+
+                <div class="carousel-reviews__footer-text carousel-reviews__footer-text--last">Бартер</div>
+              </div>
+            </div><!--/carousel-rewiews__wrap-->
+
+            
+          </div><!--/carousel-reviews-->
+        </div><!--/swiper-container-->
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
+
+      </div><!--/carousel__wrap-2-->
+
+    </div><!--/container-->
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class=" footer__inner">
+      <div class="footer__logo logo">
+        <a href="#" class="logo__link">
+          <svg aria-hidden="true" class="logo__svg">
+            <use xlink:href="static/img/symbol/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__block">
+        <h2 class="footer__title title-1">Меню</h2>
+        <ul class="nav__list nav__list--footer list-reset">
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              О нас
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Блог
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Контакты
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Помощь
+            </a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__block">
+        <h2 class="footer__title title-1">Помощь</h2>
+        <ul class="nav__list nav__list--footer list-reset">
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Политика
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Вход
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Регистрация
+            </a></li>
+          <li class="nav__item nav__item--footer">
+            <a href="#" class="nav__link">
+              Служба поддержки
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <h2 class="footer__title title-1">Соц. сети</h2>
+        <ul class="footer__social list-reset">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img src="static/img/social/fb.png" width="48" height="48" alt="Фейсбук">
+            </a></li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img src="static/img/social/vk.png" width="48" height="48" alt="Вконтакте">
+            </a></li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img src="static/img/social/inst.png" width="48" height="48" alt="Инстаграм">
+            </a></li>
+        </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright-box">Copyright © 2021<br> Все права защищены</p>
+      <div class="footer__copyright-box">
+        <p class="footer__copyright-text">Правила</p>
+        <p class="footer__copyright-text">Помощь</p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>
