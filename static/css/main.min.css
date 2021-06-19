@@ -283,7 +283,7 @@ img {
 }
 
 .projects__text {
-  min-width: 684px;
+  max-width: 684px;
   min-height: 115px;
   margin-bottom: 30px;
 }
@@ -389,6 +389,10 @@ img {
   .projects__photo {
     margin-right: 0;
     margin-bottom: 58px;
+  }
+
+  .projects__desc {
+    flex-grow: 1;
   }
 
   .projects__name-1 {
