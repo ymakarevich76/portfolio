@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Монтаж дымоходов</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+      <div class="header__logo-desc">
+        <a href="index.html" class="header__logo">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </a>
+        <p class="header__desc">
+          <b>Профессиональный монтаж<br>
+            дымоходов</b> любой сложности на<br>
+          территории Киева и Киевской обл.
+        </p>
+      </div>
+
+      <div class="header__map-wrap-btn">
+        <div class="header__map-desc">
+          <a href="#" class="header__map-img">
+            <img src="static/img/map/map.png" alt="">
+          </a>
+          <p class="header__address">
+            <b class="heavy">Украина, Киев,</b><br>
+            Васильковская 30<br>
+            <a class="header__address-link" data-fancybox="" data-type="iframe"
+              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.536483374805!2d30.489490215685848!3d50.39383867946752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c475044599%3A0x865c5c7909939ce2!2z0YPQuy4g0JLQsNGB0LjQu9GM0LrQvtCy0YHQutCw0Y8sINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1619856118652!5m2!1sru!2sru"
+              href="javascript:;">
+              Посмотреть на карте
+            </a>
+            <!-- <a class="header__address-link fancy-class"
+              href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10174.145864712596!2d30.491679000000005!3d50.39383900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c475044599%3A0x865c5c7909939ce2!2z0YPQuy4g0JLQsNGB0LjQu9GM0LrQvtCy0YHQutCw0Y8sINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1624089744597!5m2!1sru!2sru"
+              data-fancybox="iframe">Посмотреть на карте</a> -->
+          </p>
+        </div>
+        <div class="header__lang">
+          <p class="header__lang-text">Выбор языка</p>
+          <p class="header__lang-wrap-link">
+            <a href="#" class="header__lang-link header__lang-link--current">RU</a>
+            <a href="#" class="header__lang-link">UA</a>
+          </p>
+        </div>
+
+        <a data-fancybox href="#modal" class="header__btn btn btn-reset">Консультация инженера</a>
+      </div>
+
+      <div class="header__contacts">
+        <a href="tel:+38 067 242-58-78" class="header__phone"><b class="heavy">+38 067 242-58-78</b></a>
+
+        <div class="header__social social">
+          <a href="#" class="header__social-link social__link" aria-label="viber-link">
+          </a>
+          <a href="#" class="header__social-link social__link" aria-label="telegram-link">
+          </a>
+          <a href="#" class="header__social-link social__link" aria-label="whatsapp-link"></a>
+        </div>
+      </div>
+
+      <button class="header__burger header__burger--opened" arial-label="Открыть меню" type="button"></button>
+    </div>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Калькулятор</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Наши новости</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Консультация</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Преимущество</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Производство</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Вопрос-ответ</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__item-link">Контакты</a>
+        </li>
+      </ul>
+      <button class="nav__icon-close" arial-label="Закрыть меню" type="button"></button>
+    </nav>
+  </div>
+  <!--/container-->
+</header>
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="primary">
+    <div class="container">
+      <h1 class="primary__title title-1"><b class="heavy">Монтаж дымоходов из<br class="primary__title-br-1">
+          нержавеющей стали</b><br class="primary__title-br-2"> для<br class="primary__title-br-3"> частных
+        домов
+        и предприятий</h1>
+
+      <div class="primary__list">
+        <div class="primary__item">
+          <b>лет устанавливаем<br>
+            дымоходы</b> для частных<br>
+          лиц и организаций
+        </div>
+        <div class="primary__item">
+          <b>Бесплатный выезд<br>
+            инженера</b> в пределах<br>
+          30 км. от Киева
+        </div>
+        <div class="primary__item">
+          <b>Монтаж под ключ от<br>
+            1 дня,</b> в наличии все<br>
+          разрешительные<br>
+          документы
+        </div>
+
+      </div>
+
+      <div class="primary__wrap-img">
+        <img src="static/img/background/man.png" width="599" height="753" alt="Мужчина">
+      </div>
+
+      <div class="primary__footer">
+        <div class="primary__cost">
+          <p class="primary__sale">
+            Рассчитайте стоимость монтажа вашего<br>
+            дымохода за 1 минуту и<br> <span class="primary__sale-accent">получите скидку 15%</span>
+          </p>
+
+          <a href="#" class="primary__btn btn btn--orange">
+            Рассчитать стоимость<br>
+            монтажа и получить скидку
+          </a>
+        </div>
+        <!--/primary__cost-->
+
+        <div class="primary__serificate">
+          <h2 class="primary__serificate-title title-2">
+            Лицензии и сертификаты в наличии
+          </h2>
+
+          <div class="primary__sertificate-slider slider-sertificate">
+            <div class="slider-sertificate__container swiper-container">
+              <div class="slider-sertificate__wrapper swiper-wrapper">
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-1.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/1.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-1.jpg">
+
+                      <img src="static/img/sertificate/sert-1-mob.jpg" alt="Сертификат-1">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-2.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/2.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-2.jpg">
+
+                      <img src="static/img/sertificate/sert-2-mob.jpg" alt="Сертификат-2">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/3.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-3.jpg">
+
+                      <img src="static/img/sertificate/sert-3-mob.jpg" alt="Сертификат-3">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/3.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-3.jpg">
+
+                      <img src="static/img/sertificate/sert-3-mob.jpg" alt="Сертификат-3">
+                    </picture>
+                  </a>
+                </div>
+
+                <div class="slider-sertificate__slide swiper-slide">
+                  <a data-fancybox="gallery" href="static/img/sertificate/sert-3.jpg">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="static/img/sertificate/2.jpg">
+
+                      <source media="(min-width: 576px)" srcset="static/img/sertificate/sert-2.jpg">
+
+                      <img src="static/img/sertificate/sert-2-mob.jpg" alt="Сертификат-2">
+                    </picture>
+                  </a>
+                </div>
+
+              </div>
+              <!--/swiper-wrapper-->
+            </div>
+            <!--/swiper-container-->
+
+            <div class="slider-sertificate__btn-prev swiper-button-prev"></div>
+            <div class="slider-sertificate__btn-next swiper-button-next"></div>
+
+          </div>
+          <!--/slider-sertificate-->
+        </div>
+        <!--/primary__serificate-->
+
+      </div>
+      <!--/primary__footer-->
+    </div>
+    <!--/container-->
+  </section>
+</main>
+
+<footer class="footer">
+  <!-- <div class="container">footer</div> -->
+</footer>
+<div class="modal" id="modal">
+   <div class="modal__wrap">
+      <form action="#" class="modal__form" method="GET">
+
+         <h2 class="modal__title title-3">
+            Просто оставьте заявку<br>
+            и получите консультацию<br>
+            по всем вопросам</h2>
+         <p class="modal__text-top">
+            Как с Вами удобно связаться?
+         </p>
+
+
+         <div class="modal__social social">
+            <button type="button" class="modal__social-link social__link btn-reset" aria-label="viber-link">
+            </button>
+            <button type="button" class="modal__social-link social__link btn-reset" aria-label="telegram-link">
+            </button>
+            <button type="button" class="modal__social-link social__link btn-reset" aria-label="whatsapp-link"></button>
+
+            <button type="button" class="modal__social-link social__link btn-reset" aria-label="phone-link">
+            </button>
+         </div>
+
+         <input type="tel" name="tel" class="modal__social-tel" required="" placeholder="Ваш номер телефона">
+
+         <a href="#" class="modal__btn btn btn--orange">
+            Жду
+         </a>
+
+         <div class="modal__wrap-text">
+            <a href="#" class="modal__text-bottom">Нажимая на кнопку вы соглашаетесь с<br> условиями
+               <span class="modal__text-accent">Политики конфиденциальности</span>
+            </a>
+         </div>
+      </form>
+      <div class="modal__photo">
+         <img src="static/img/background/man-modal.png" width="359" height="478" alt="Мужчина с инструментом">
+
+         <div class="modal__photo-desc desc-man">
+            <h2 class="desc-man__title title-3">Сергей</h2>
+            <p class="desc-man__sub">Главный инженер</p>
+            <p class="desc-man-text">Опыт работы с<br>
+               дымоходами 8 лет
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./static/js/libs.min.js"></script>
+<script src="./static/js/main.min.js"></script>
+</body>
+
+</html>
