@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__info">
+    <div class="header__info-wrap">
+      <p class="address">ул. Барышиха, 57 а, Москва, Россия</p>
+      <div class="phone">
+        <a href="tel:+74956499839" class="phone__link">
+          + 7 (495) 649-98-39</a>
+      </div>
+      <a href="#" class="email">info@pitbox.ru</a>
+      <p class="time">
+        Пн-Вс: 9:00 - 22:00
+      </p>
+    </div>
+  </div>
+  <div class="header__mob">
+    <button type="button" class="header__mob-icon btn-reset">
+      <svg aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header__wrap-top animate__animated animate__fast">
+    <div class="header__top container">
+      <div class="header__top-container">
+        <a href="index.html" class="header__logo logo">
+          <img src="static/img/logo/logo-violet.png" alt="Логотип">
+        </a>
+        <div class="header__right">
+          <div class="header__right-top">
+            <div class="header__time">
+              <p class="header__time-info">
+                Понедельник-Воскресенье<br>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info">
+                Понедельник-Воскресенье<br>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
+                Пн-Вс:
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
+                Пн-Вс:
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+            </div>
+
+            <button type="button" class="header__appointment appointment popup__link btn-reset"
+              data-da=".header__mob,767, last">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
+              </svg>
+              <span>Записаться</span>
+            </button>
+
+            <div class="header__right-block">
+              <button type="button" class="header__nav-btn btn-reset">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="header__right-bottom">
+            <div class="header__icons">
+              <img src="static/img/icon/coffee-solid.svg" alt="Кофе">
+              <img src="static/img/icon/wifi-solid.svg" alt="wi-fi">
+              <img src="static/img/icon/armchair-svgrepo-com.svg" alt="Кресло">
+            </div>
+            <div class="header__phone phone">
+              <a href="tel:+74956499839" class="phone__link  phone__link--big">
+                + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
+              <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
+                <svg aria-hidden="true">
+                  <use xlink:href="static/img/symbol/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__wrap-bottom container animate__animated animate__fast">
+    <div class="header__bottom">
+
+      <nav class="header__nav nav" data-da=".header__nav-lg,992, first">
+        <button class="header__icon-close btn-reset">
+        </button>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="our-services.html" class="nav__link nav__link--border">Автосервис
+            </a>
+            <button type="button" class="nav__box-icon btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+              </svg>
+            </button>
+            <div class="nav__mega-menu mega-menu">
+              <div class="mega-menu__container container row">
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Аргоновая сварка</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Прайс-лист на услуги сервиса</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Бесплатный Эвакуатор</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Комплексная диагностика автомобиля</a>
+                    <ul class="sub-1__sub sub-2 list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Компьютерная диагностика, электрика</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Заправка кондиционера автомобиля</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт стартеров и генераторов</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт глушителя</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Промывка радиатора</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт двигателя</a>
+                    <ul class="sub-1__sub-2 sub-2  list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Диагностика двигателя</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт ходовой</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт КПП</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Кузовной ремонт</a>
+                    <ul class="sub-1__sub-2 sub-2  list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Покраска</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Установка автосигнализаций</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт ГУР</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт коммерческого транспорта</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт дизельных топливных систем</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Выезд мастера по Митино. СЗАО</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Запчасти на все авто</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="auto-zapchasti.html" class="nav__link">Автозапчасти</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сход-развал</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Шиномонтаж
+            </a>
+            <button type="button" class="nav__box-icon btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+              </svg>
+            </button>
+            <ul class="nav__sub-1 sub-1 list-reset">
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Сезонное хранение резины(шин)</a>
+              </li>
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Ремонт литых дисков</a>
+              </li>
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Ремонт боковых порезов</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Замена масла</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Тюнинг</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="about-us.html" class="nav__link">О сервисе</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <form action="" class="header__search search" data-da=".header__right-block,992, first">
+          <button type="submit" class="search__btn btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <input type="search" id="search" placeholder="Search …" class="search__input">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__nav-lg"></div>
+  </div>
+  <!--/container-->
+</header>
+
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////
+  -->
+  <section class="intro-inner">
+    <h1>Автозапчасти</h1>
+    <ul class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="#">Главная<span> /</span></a>
+  </li>
+  <li class="breadcrumb__item breadcrumb__item--current">Контакты</li>
+</ul>
+
+  </section>
+
+  <section class="our-services">
+
+    <div class="container">
+      <div class="our-services__wrap row">
+        <div class="our-services__content col">
+          <h2 class="our-services__title">
+            Автозапчасти в Митино</h2>
+          <p class="our-services__text">
+            В автосервисе PitBox Вы всегда найдете качественные запчасти для иномарок от производителей и дилеров.</p>
+
+          <p class="our-services__text">Стоимость ремонта автомобиля напрямую зависит от стоимости автозапчастей.
+            Скорость же ремонта зависит от
+            доступности необходимых деталей для Вашей машины. Повысить качество обслуживания и сократить время ожидания
+            стремится каждый, дорожащий своей репутацией, автосервис. Наш сервис в Митино не исключение. </p>
+          <p class="our-services__text">Мы делаем все
+            возможное, чтобы ремонт Вашего авто нашими силами был качественным, быстрым и соответствовал Вашим
+            ожиданиям.</p>
+          <p class="our-services__text">Наши преимущества:</p>
+          <ul class="our-services__list list-reset">
+            <li class="our-services__item">собственный склад автозапчастей;</li>
+            <li class="our-services__item">экспресс-доставка запчастей для ремонта автомобиля;</li>
+            <li class="our-services__item">заказ автозапчастей для всех авто. Звоните: <a href="tel:84956499839"
+                class="our-services__text-tel">+7 (495) 649-98-39</a>.</li>
+          </ul>
+          <p class="our-services__text"> Для Вас самые востребованные и необходимые: масляные фильтры, воздушные
+            фильтры, салонные фильтры, топливные
+            фильтры, свечи зажигания, тормозные колодки, щетки стеклоочистителя, автотовары, автолампы галоген, ксенон,
+            предохранители, автохимия, незамерзающая жидкость, рычаги подвески, стартеры, генераторы, стойки
+            стабилизатора
+            и многое другое!</p>
+
+          <div class="our-services__brands brands">
+            <a href="auto-brand.html" class="brands__link">
+              <img src="static/img/brands/gaz.jpg" alt="марка Газ">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/bmw.jpg" alt="марка БМВ">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/citroen.jpg" alt="марка Ситроен">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/fiat.jpg" alt="марка Фиат">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/ford.jpg" alt="марка Форд">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/jeep.jpg" alt="марка Джип">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/mazda.jpg" alt="марка Мазда">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/mercedes-benz.jpg" alt="марка Мерседес">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/nissan.jpg" alt="марка Ниссан">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/opel.jpg" alt="марка Опель">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/peugeot.jpg" alt="марка Пежо">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/toyota.jpg" alt="марка Тойота">
+            </a>
+            <a href="#" class="brands__link">
+              <img src="static/img/brands/volvo.jpg" alt="марка Вольво">
+            </a>
+          </div>
+
+          <h3 class="our-services__title">
+            Автомагазин Митино – быстро и качественно</h3>
+          <p class="our-services__text">
+            С нами ремонт Вашего авто не превратится в вереницу бесполезных манипуляций и пустого ожидания. Мы работаем
+            быстро и качественно. Мы знаем цену времени и прекрасно представляем все неудобства, связанные с отсутствием
+            своего автомобиля. Поэтому мы делаем все возможное, что бы Вы получили свой автомобиль качественно
+            отремонтированным в самые короткие сроки. А наличие на собственном складе автозапчастей заметно сокращает
+            Ваше время ожидания.</p>
+          <p class="our-services__text">Помимо запчастей, автомагазин в Митино предоставляет своим покупателям большой
+            выбор профессиональной автохимии и прочих, необходимых автовладельцу, товаров. Качественные шампуни,
+            полироли, щетки, скребки, микрофибровые салфетки – подарят Вашему авто прекрасный ухоженный вид, а Вам
+            обеспечат комфорт пользования машиной.</p>
+          <p class="our-services__text">По всем интересующим Вас вопросам, Вы всегда можете обратиться по телефону <a
+              href="tel:84956499839" class="our-services__text-tel">+7
+              (495) 649-98-39</a> к нашим менеджерам.</p>
+          <p class="our-services__text our-services__text--bold">Звоните, мы рады Вам помочь!</p>
+
+          <div class="our-services__content-box">
+            <a href="#" class="our-services__appoint popup__link">
+              <div class="our-services__appoint-icon">
+                <span></span>
+              </div>
+              <h3 class="our-services__appoint-name">Записаться</h3>
+              <p class="our-services__appoint-text">
+                Perform a search to find a store near you that accepts online appointment requests </p>
+            </a>
+            <a href="#" class="our-services__appoint">
+              <div class="our-services__appoint-icon">
+                <span></span>
+              </div>
+              <h3 class="our-services__appoint-name">Заказать звонок</h3>
+              <p class="our-services__appoint-text">
+                Perform a search to find a store near you that accepts online appointment requests </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="our-services__menu col">
+          <h4 class="our-services__menu-title">Контакты</h4>
+          <div class="our-services__contacts">
+            <div class="our-services__contacts-item">
+              <p class="our-services__address address">ул. Барышиха, 57 а, Москва, Россия</p>
+              <div class="our-services__phone phone">
+                <a href="tel:+74956499839" class="phone__link">
+                  + 7 (495) 649-98-39</a>
+              </div>
+              <a href="#" class="our-services__email email">info@pitbox.ru</a>
+              <p class="our-services__time time">
+                Пн-Вс: 9:00 - 22:00
+              </p>
+            </div>
+            <div class="our-services__contacts-item">
+              <p class="our-services__address address">ул. Барышиха, 57 а, Москва, Россия</p>
+              <div class="our-services__phone phone">
+                <a href="tel:+74956499839" class="phone__link">
+                  + 7 (495) 649-98-39</a>
+              </div>
+              <a href="#" class="our-services__email email">info@pitbox.ru</a>
+              <p class="our-services__time time">
+                Пн-Вс: 9:00 - 22:00
+              </p>
+            </div>
+          </div>
+          <button type="button" class="our-services__btn btn btn-reset">
+            <span>Записаться</span>
+          </button>
+
+          <div class="our-services__nav nav-aside">
+            <h4 class="nav-aside__title">Наши услуги</h4>
+            <ul class="nav-aside__list list-reset">
+              <li class="nav-aside__item">
+                <a href="#" class="nav-aside__link nav-aside__link--active">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#uniE907"></use>
+                  </svg>
+                  <span>Автосервис</span>
+                </a>
+                <button type="button" class="accordion-btn accordion-btn--active btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                  </svg>
+                </button>
+                <div class="nav-aside__sub-menu sub-menu-aside">
+                  <ul class="sub-menu-aside__list list-reset">
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Аргоновая сварка</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Прайс-лист на услуги сервиса</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Бесплатный Эвакуатор</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Комплексная диагностика автомобиля</a>
+                      <ul class="aside-sub-1 list-reset">
+                        <li class="aside-sub-1__item">
+                          <a href="#" class="aside-sub-1__link">Компьютерная диагностика, электрика</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Заправка кондиционера автомобиля</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт стартеров и генераторов</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт глушителя</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Промывка радиатора</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт двигателя</a>
+                      <ul class="aside-sub-1  list-reset">
+                        <li class="aside-sub-1__item">
+                          <a href="#" class="aside-sub-1__link">Диагностика двигателя</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт ходовой</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт КПП</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Кузовной ремонт</a>
+                      <ul class="aside-sub-1 list-reset">
+                        <li class="aside-sub-1__item">
+                          <a href="#" class="aside-sub-1__link">Покраска</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Установка автосигнализаций</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт ГУР</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт коммерческого транспорта</a>
+                    </li>
+
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт дизельных топливных систем</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Выезд мастера по Митино. СЗАО</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Запчасти на все авто</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-aside__item">
+                <a href="#" class="nav-aside__link">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#uniE92D"></use>
+                  </svg>
+                  <span>Автозапчасти</span>
+                </a>
+              </li>
+              <li class="nav-aside__item">
+                <a href="#" class="nav-aside__link">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#uniE92C"></use>
+                  </svg>
+                  <span>Сход-развал</span>
+                </a>
+              </li>
+              <li class="nav-aside__item">
+                <a href="#" class="nav-aside__link">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#uniE906"></use>
+                  </svg>
+                  <span>Шиномонтаж</span>
+                </a>
+                <button type="button" class="accordion-btn btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+                  </svg>
+                </button>
+                <div class="nav-aside__sub-menu sub-menu-aside">
+                  <ul class="sub-menu-aside__list list-reset">
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Сезонное хранение резины(шин)</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт литых дисков</a>
+                    </li>
+                    <li class="sub-menu-aside__item">
+                      <a href="#" class="sub-menu-aside__link">Ремонт боковых порезов</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-aside__item">
+                <a href="#" class="nav-aside__link">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#uniE903"></use>
+                  </svg>
+                  <span>Замена масла</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__map">
+    <iframe style="border: 0;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.109248728665!2d37.34464701195486!3d55.860770920549676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a3d7decd64220a4!2zUGl0Qm94LCDQsNCy0YLQvtGB0LXRgNCy0LjRgQ!5e0!3m2!1sru!2s!4v1410201969212"
+      width="100%" height="420" frameborder="0"></iframe>
+    <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.096029402135!2d37.34225571579425!3d55.86100028058243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5f4aea25f48edd1!2zNTXCsDUxJzM5LjYiTiAzN8KwMjAnNDAuMCJF!5e0!3m2!1sru!2sby!4v1636969158216!5m2!1sru!2sby"
+      width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  </div>
+  <div class="footer__container container">
+    <div class="footer__contact">
+      <p class="footer__title">Контакты</p>
+      <p class="footer__address address">ул. Барышиха, 57 а, Москва, Россия, 125310</p>
+      <div class="footer__phone phone">
+        <a href="tel:+74956499839" class="phone__link">
+          + 7 (495) 649-98-39</a>
+      </div>
+      <a href="#" class="footer__email email">info@pitbox.ru</a>
+
+      <p class="footer__title">Часы работы</p>
+      <p class="footer__time time">
+        Пн-Вс: <span>9:00 - 22:00</span>
+      </p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-wrap container">
+      <p class="footer__copyright"> © pitbox.ru 2008-2021. Все права защищены.</p>
+      <a href="https://pitbox.ru" class="footer__link">Автосервис Митино</a>
+    </div>
+  </div>
+</footer>
+
+<div class="popup__wrap">
+
+  <div id="popup-order" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__header">
+          <button type="button" class="popup__appointment appointment btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
+            </svg>
+            <span>Записаться</span>
+          </button>
+          <button type="button" class="popup__close btn-reset"></button>
+        </div>
+        <div class="popup__desc">
+          <h3 class="popup__title">Записаться <span>на приём</span></h3>
+          <p>Чтобы записаться на прием, позвоните нам по телефону + 7 (495) 649-98-39 или заполните форму ниже, указав
+            свою
+            информацию и запрашиваемые услуги.</p>
+
+          <form action="" class="popup__form form">
+
+            <div class="popup__form-row">
+
+              <div class="popup__form-col">
+                <h4 class="popup__form-title">Контакты</h4>
+
+                <div class="popup__form-box-input form__box-input">
+                  <input class="popup__form-input form__input" type="text" id="popup-name" required placeholder="Имя">
+
+                  <input class="popup__form-input form__input" type="text" id="popup-phone" required
+                    placeholder="Телефон">
+                  <select name="service" id="service" class="popup__form-select form__input" aria-required="true"
+                    aria-invalid="false">
+                    <option value="Сервис-1" selected>Сервис 1</option>
+                    <option value="Сервис-2">Сервис 2</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="popup__form-col-wide">
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">Информация об авто</h4>
+
+                  <div class="popup__form-box-input form__box-input">
+                    <input class="popup__form-input form__input" type="text" id="popup-model"
+                      placeholder="Марка и модель">
+
+                    <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Год выпуска">
+                  </div>
+                </div>
+
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">
+                    Детали встречи</h4>
+
+                  <div class="popup__form-box-input form__box-input">
+                    <div class="popup__form-wrap-date popup__form-wrap-date">
+                      <input class="popup__form-input form__input" placeholder="Дата" type="text"
+                        onfocus="(this.type='date')" id="date">
+                    </div>
+
+                    <div class="popup__form-wrap-time popup__form-wrap-time">
+                      <input class="popup__form-input form__input" type="text" onfocus="(this.type='time')" id="time"
+                        placeholder="10:00">
+                    </div>
+                  </div>
+                </div>
+
+                <textarea class="popup__form-textarea form__input" placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+
+            <div class="popup__wrap-btn">
+              <button type="submit" class="popup__btn btn btn-reset">
+                <span>Записаться</span>
+              </button>
+              <p class="popup__btn-text">Обратите внимание, что запрошенные вами дата и время могут быть
+                недоступны.
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--/popup__content-->
+    </div>
+    <!--/popup__body-->
+  </div>
+  <!--/popup-->
+</div>
+
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>

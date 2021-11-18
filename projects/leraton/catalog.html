@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+
+      <a href="index.html" class="header__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 1199px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+      </a>
+      <div class="header__info">
+        <div class="header__time time">
+          Ежедневно<br>
+          с 10-00 до 21-00
+        </div>
+
+        <div class="header__phone phone">
+          <a class="phone__link" href="tel:+749515045128">+7 (495) 150-45-12
+          </a>
+          <a class="phone__link" href="tel:+78005003412">+7 (800) 500-34-12
+          </a>
+        </div>
+
+        <div class="header__address address">
+          г. Москва, ул. 1-ая<br>
+          Мытищинская 27с1
+        </div>
+      </div>
+
+      <div class="header__dynamic">
+        <form class="header__search search">
+          <div class="search__wrap-input">
+            <input type="text" class="search__input" name="search">
+            <button type="submit" class="search__btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="header__social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+
+        <div class="header__wrap-btn header__wrap-btn--tab">
+          <a href="#" class="header__heart btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
+            </svg>
+            <span class="header__heart-count">0</span>
+          </a>
+          <a href="user.html" class="header__user btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+            </svg>
+          </a>
+          <a href="cart.html" class="header__cart">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="header__icon-menu icon__menu btn-reset"></button>
+    </div>
+
+    <!--/header-top-->
+
+    <div class="header__bottom">
+      <nav data-da=".header__menu-container,992, last" class="header__nav nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="#" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Клиентам</a>
+          </li>
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Оплата и Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="problem.html" class="nav__link">Проблема-решение</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Партнеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__wrap-btn">
+        <a href="#" class="header__heart btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
+          </svg>
+          <span class="header__heart-count">0</span>
+        </a>
+        <a href="user.html" class="header__user btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a href="cart.html" class="header__cart">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+          </svg>
+          <span class="header__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!--/container-->
+
+
+  <nav class="header__menu menu">
+    <button class="header__icon-close icon__close btn-reset">
+    </button>
+    <div class="header__menu-container">
+      <ul class="menu__list list-reset">
+        <li class="menu__item">
+          <div class="menu__wrap-link-btn">
+            <a href="#" class="menu__link">МОЙКА И УХОД</a>
+            <button class="btn-chevron btn-reset">
+              <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+            </button>
+          </div>
+          <div class="sub-menu">
+            <div class="sub-menu__container container">
+              <ul class="sub-menu__row row list-reset">
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Мойка</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Ручная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Бесконтактная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Нано мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Воски для сушки и консервации</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за мотоциклами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за лодками и яхтами</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Экстерьер</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка кузова</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за резиной и внешним пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка дисков</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка моторного отсека</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за хромом и металлами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Полировочная глина</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Интерьер</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за тканью</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за стеклом</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за кожей</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Реставрация кожи</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Освежители воздуха</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха подвесные</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха в виде спрея</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха сухие и гелевые</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--/sub-menu__container-->
+          </div>
+          <!--/sub-menu-->
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПОЛИРОВКА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ЗАЩИТА ПОВЕРХНОСТЕЙ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПЛЁНКИ И ИНСТРУМЕНТ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСХОДНИКИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">МАРКЕТИНГ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ОБОРУДОВАНИЕ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСПРОДАЖА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">БРЕНДЫ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="catalog">
+    <div class="catalog__insert insert insert--second">
+      <div class="container">
+        <h1 class="insert__title title-1">Мойка и уход</h1>
+      </div>
+      <!--/container-->
+    </div>
+    <div class="container">
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">Главная</a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">каталог</a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">мойка и уход</a>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item--current">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с
+      долгосрочным
+      защитным эффектом</li>
+  </ul>
+</div>
+
+
+    <div class="container">
+      <p class="catalog__text">
+        Leraton Shop - это современный широкий ассортимент автохимии, автокосметики и других специализированных средств
+        для ухода за экстерьером и интерьером автомобиля.
+      </p>
+      <p class="catalog__text">
+        Компания Leraton сама разрабатывает и выпускает продукты для автомойки и детейлинга. Наша лаборатория непрерывно
+        трудится на благо наших клиентов. Мы постоянно улучшаем качество продукции и добавляем в ассортимент наиболее
+        востребованные на рынке позиции.
+      </p>
+
+      <form action="" class="catalog__filter filter">
+        <div class="filter__controls">
+
+          <div class="filter__view">
+            <button type="button" class="filter__view-btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#list"></use>
+              </svg>
+            </button>
+            <button type="button" class="filter__view-btn filter__view-btn--active btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#grid"></use>
+              </svg>
+            </button>
+            <div class="filter__view-count">
+              <a href="#" class="filter__view-num filter__view-num--active">30</a>
+              <a href="#" class="filter__view-num">60</a>
+              <a href="#" class="filter__view-num">90</a>
+              <a href="#" class="filter__view-num">Все</a>
+            </div>
+          </div>
+          <div class="filter__range">
+            <div class="filter__range-snap" id="slider-snap"></div>
+            <div class="filter__range-value">
+              <span>от</span>
+              <div class="filter__range-value-lower" id="slider-snap-value-lower"></div>
+              <span>до</span>
+              <div class="filter__range-value-upper" id="slider-snap-value-upper">50000 руб.</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="filter__category">
+          <select name="" id="" class="filter__category-item">
+            <option value="По популярности" selected>По популярности</option>
+          </select>
+          <select name="" id="" class="filter__category-item">
+            <option value="По алфавиту" selected>По алфавиту</option>
+          </select>
+          <select name="" id="" class="filter__category-item filter__category-item--active">
+            <option value="По наличию" selected>По наличию</option>
+          </select>
+          <select name="" id="" class="filter__category-item">
+            <option value="По бренду" selected>По бренду</option>
+          </select>
+          <select name="" id="" class="filter__category-item">
+            <option value="По объему" selected>По объему</option>
+          </select>
+          <select name="" id="" class="filter__category-item filter__category-item--active">
+            <option value="По цене" selected>По цене</option>
+          </select>
+        </div>
+        <div class="filter__action">
+          <button type="button" class="filter__action-btn filter__action-btn--disabled btn btn-reset">
+            очистить фильтр
+          </button>
+          <button type="button" class="filter__action-btn btn btn-reset">
+            применить
+          </button>
+        </div>
+      </form>
+
+      <!--catalog__wrap--list-->
+      <div class="catalog__wrap row">
+        <a href="product.html" class="catalog__card card card--not card--new card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/1.png" alt="Uzlex Салфетка Clean-UP">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Uzlex Салфетка "Clean-UP" в рулоне,
+              <span class="card__title-module">330 мм х 20 м 21910989</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available card__available--not">Отсутствует на складе</p>
+            <p class="card__cost">1 985 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--not card--new card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/2.png" alt="Nanolex SiSpray">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с долгосрочным
+              защитным
+              эффектом.
+              <span class="card__title-module">750мл NXSiSPR007</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available card__available--not">Отсутствует на складе</p>
+            <p class="card__cost">5 246 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(2) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--not card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/2.png" alt="Nanolex SiSpray">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с долгосрочным
+              защитным
+              эффектом.
+              <span class="card__title-module">750мл NXSiSPR007</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available card__available--not">Отсутствует на складе</p>
+            <p class="card__cost">5 246 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(3) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/3.png" alt="IK Goizper">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">IK Goizper Распылитель для спиртов и растворителей, IK HC TR1
+              <span class="card__title-module">1л</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available">На складе 20 шт.</p>
+            <p class="card__cost">1 250 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(4) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/4.png" alt="Paradise Air">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Paradise Air Ароматизатор для автомобиля/ дома Exotic Cotton (Экзотический Хлопок)
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available">На складе 20 шт.</p>
+            <p class="card__cost">360 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(5) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/5.png" alt="LERATON D1">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Очиститель кожи - LERATON D1,
+              <span class="card__title-module">473мл.</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available">На складе 20 шт.</p>
+            <p class="card__cost">3 780 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(6) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--not card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/6.png" alt="LERATON D2">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Крем-кондиционер кожи для - LERATON D2
+              <span class="card__title-module">473мл.</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available card__available--not">Отсутствует на складе</p>
+            <p class="card__cost">246 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(7) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="catalog__card card card--not card--list col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/7.png" alt="LERATON IQ Detailer Mint Bubblegum">
+          </div>
+          <div class="card__wrap-info">
+            <h3 class="card__title">Детейлер-спрей для интерьера со жвачки и мяты - LERATON IQ Detailer Mint
+              Bubblegum,
+              <span class="card__title-module">473мл.</span>
+            </h3>
+            <p class="card__desc">
+              Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+              фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+            </p>
+            <p class="card__available card__available--not">Отсутствует на складе</p>
+            <p class="card__cost">750 руб.</p>
+            <div class="card__img-buy">
+              <button type="button" data-da=".card:nth-child(8) .card__wrap-img,767, last" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--catalog__wrap--grid-->
+      <div class="catalog__wrap catalog__wrap--active row">
+        <a href="product.html" class="catalog__card card card--new col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/1.png" alt="Uzlex Салфетка Clean-UP">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Uzlex Салфетка "Clean-UP" в рулоне,
+            <span class="card__title-module">330 мм х 20 м 21910989</span>
+          </h3>
+          <p class="card__desc">
+            Высокопенный концентрированный состав для очистки изделий из ткани (сидения, декоративные вставки) без
+            фосфатов. Содержит только быстроразлагаемые активные компоненты, эффективно устраняющие загрязнения.
+          </p>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">1 985 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/2.png" alt="Nanolex SiSpray">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с долгосрочным
+            защитным
+            эффектом.
+            <span class="card__title-module">750мл NXSiSPR007</span>
+          </h3>
+          <p class="card__available">На складе 20 шт.</p>
+          <p class="card__cost">5 246 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/3.png" alt="IK Goizper">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">IK Goizper Распылитель для спиртов и растворителей, IK HC TR1
+            <span class="card__title-module">1л</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">1 250 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/4.png" alt="Paradise Air">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Paradise Air Ароматизатор для автомобиля/ дома Exotic Cotton (Экзотический Хлопок)
+          </h3>
+          <p class="card__available">На складе 18 шт.</p>
+          <p class="card__cost">360 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/5.png" alt="LERATON D1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель кожи - LERATON D1,
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 8 шт.</p>
+          <p class="card__cost">3 780 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/6.png" alt="LERATON D2">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Крем-кондиционер кожи для - LERATON D2
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 20 шт.</p>
+          <p class="card__cost">246 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/7.png" alt="LERATON IQ Detailer Mint Bubblegum">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Детейлер-спрей для интерьера со жвачки и мяты - LERATON IQ Detailer Mint
+            Bubblegum,
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">750 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/8.png" alt="LERATON T1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель текстиля - LERATON T1,
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 5 шт.</p>
+          <p class="card__cost">1 225 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/9.png" alt="Uzlex Салфетка">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Uzlex Салфетка "Clean-UP" в рулоне,
+            <span class="card__title-module">330 мм х 20 м 21910989</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">1 985 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/10.png" alt="Nanolex SiSpray">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с долгосрочным
+            защитным эффектом.
+            <span class="card__title-module"> 750мл NXSiSPR007</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">5 246 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/11.png" alt="IK Goizper">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">IK Goizper Распылитель для спиртов и растворителей, IK HC TR1
+            <span class="card__title-module">1л</span>
+          </h3>
+          <p class="card__available">На складе 15 шт.</p>
+          <p class="card__cost">1 250 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/12.png" alt="Paradise Air">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Paradise Air Ароматизатор для автомобиля/ дома Exotic Cotton (Экзотический Хлопок)
+          </h3>
+          <p class="card__available">На складе 7 шт.</p>
+          <p class="card__cost">360 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/13.png" alt="LERATON D1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель кожи - LERATON D1,
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 18 шт.</p>
+          <p class="card__cost">3 780 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/14.png" alt="LERATON D2">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Крем-кондиционер кожи для - LERATON D2
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">246 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/15.png" alt="LERATON IQ Detailer">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Детейлер-спрей для интерьера со жвачки и мяты - LERATON IQ Detailer Mint
+            Bubblegum,
+            <span class="card__title-module"> 473мл.</span>
+          </h3>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">750 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/16.png" alt="LERATON T1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель текстиля - LERATON T1,
+          </h3>
+          <span class="card__title-module">473мл.</span>
+          <p class="card__available card__available--not">Отсутствует на складе</p>
+          <p class="card__cost">1 225 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/17.png" alt="LERATON D1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель кожи - LERATON D1,
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 18 шт.</p>
+          <p class="card__cost">3 780 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/18.png" alt="LERATON D2">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Крем-кондиционер кожи для - LERATON D2
+            <span class="card__title-module">473мл.</span>
+          </h3>
+          <p class="card__available">На складе 10 шт.</p>
+          <p class="card__cost">246 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/19.png" alt="LERATON IQ Detailer">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Детейлер-спрей для интерьера со жвачки и мяты - LERATON IQ Detailer Mint
+            Bubblegum,
+            <span class="card__title-module"> 473мл.</span>
+          </h3>
+          <p class="card__available">На складе 15 шт.</p>
+          <p class="card__cost">750 руб.</p>
+        </a>
+
+        <a href="#" class="catalog__card card col">
+          <button type="button" class="card__heart-btn btn-reset">
+          </button>
+          <div class="card__wrap-img">
+            <img src="static/img/product/20.png" alt="LERATON T1">
+            <div class="card__img-buy">
+              <button type="button" class="card__cart btn-reset">
+                <p class="card__cart-text">
+                  <span class="card__cart-word">добавить</span>
+                  в корзину</span>
+                </p>
+              </button>
+              <button class="card__buy-btn btn btn--accent btn-reset" type="button">купить в 1 клик</button>
+            </div>
+          </div>
+          <h3 class="card__title">Очиститель текстиля - LERATON T1,
+          </h3>
+          <span class="card__title-module">473мл.</span>
+          <p class="card__available">На складе 18 шт.</p>
+          <p class="card__cost">1 225 руб.</p>
+        </a>
+      </div>
+
+
+
+      <div class="catalog__pagination pagination" id="pagination">
+        <div class="pagination__pages">
+          <span class="pagination__page pagination__page--current">1</span>
+          <a class="pagination__page" href="#">
+            <span class="pagination__num">2</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <span class="pagination__num">3</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <span class="pagination__num">4</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <span class="pagination__num">5</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="help">
+    <div class="help__container container">
+      <p class="help__title title-2">Помощь:</p>
+      <div class="help__wrap-link">
+        <a href="#" class="help__link">Чем мыть машину?</a>
+        <a href="#" class="help__link">Чем полировать авто?</a>
+        <a href="#" class="help__link">абразивная полироль</a>
+        <a href="#" class="help__link">сушка авто</a>
+        <a href="#" class="help__link">фибра для авто</a>
+        <a href="#" class="help__link">Мицеллярная жидкость без спирта</a>
+        <a href="#" class="help__link">Паста ГОИ</a>
+        <a href="#" class="help__link">Чем лучше отполировать фары</a>
+        <a href="#" class="help__link">Краска для отражателей</a>
+        <a href="#" class="help__link">термо хром</a>
+        <a href="#" class="help__link">Хромированная термостойкая краска</a>
+        <a href="#" class="help__link">чем обезжирить кузов авто</a>
+        <a href="#" class="help__link">Обезжириватель</a>
+        <a href="#" class="help__link">Чем мыть машину?</a>
+        <a href="#" class="help__link">Чем полировать авто?</a>
+        <a href="#" class="help__link">абразивная полироль</a>
+        <a href="#" class="help__link">сушка авто</a>
+        <a href="#" class="help__link">фибра для авто</a>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__left">
+      <a href="index.html" class="footer__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-footer-mob.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 1199px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+      </a>
+      <nav class="footer__nav nav">
+        <ul class="nav__list list list-reset">
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">О компании</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Клиентам</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Каталог</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Оплата и Доставка</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Партнеры</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="footer__left-social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__right">
+      <div class="footer__info-left">
+        <div class="footer__phone phone">
+          <a class="phone__link" href="tel:+749515045128">+7 (495) 150-45-12
+          </a>
+          <span class="phone__text">или</span>
+          <a class="phone__link" href="tel:+78005003412">+7 (800) 500-34-12
+          </a>
+        </div>
+        <!--/phone-->
+
+        <div class="footer__email email">
+          <div class="email__wrap">
+            <a class="email__link" href="#">shop@leraton.ru
+            </a>
+            <span class="email__text">- заказы</span>
+          </div>
+          <div class="email__wrap">
+            <a class="email__link" href="#">office@leraton.ru
+            </a>
+            <span class="email__text"> - вопросы сотрудничества</span>
+          </div>
+        </div>
+        <!--/email-->
+
+        <div class="footer__address address">
+          г. Москва, ул. 1-ая Мытищинская 27с1
+        </div>
+
+        <div class="footer__time time">
+          <span>с</span> 10-00 <span>до</span> 21-00
+        </div>
+
+        <p class="footer__delivery">
+          Доставка по всей территории РФ и в страны СНГ!<br> Оперативно. Удобным для вас способом!
+        </p>
+      </div>
+      <div class="footer__info-right">
+        <div class="footer__pay">
+          <p class="footer__pay-text">Мы принимаем к оплате:</p>
+          <div class="footer__pay-wrap-img">
+            <img class="footer__pay-img" src="static/img/pay/1.png" alt="MasterCard">
+            <img class="footer__pay-img" src="static/img/pay/2.png" alt="Связной">
+            <img class="footer__pay-img" src="static/img/pay/3.png" alt="Сбербанк">
+            <img class="footer__pay-img" src="static/img/pay/4.png" alt="Visa">
+            <img class="footer__pay-img" src="static/img/pay/5.png" alt="Кошелек pay">
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">Интернет-магазин и служба доставки<br> LERATON Shop, <br> © 2016-2021
+            LERATON MOSCOW</p>
+        </div>
+        <div class="footer__social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__info">
+    <div class="header__info-wrap">
+      <p class="address">ул. Барышиха, 57 а, Москва, Россия</p>
+      <div class="phone">
+        <a href="tel:+74956499839" class="phone__link">
+          + 7 (495) 649-98-39</a>
+      </div>
+      <a href="#" class="email">info@pitbox.ru</a>
+      <p class="time">
+        Пн-Вс: 9:00 - 22:00
+      </p>
+    </div>
+  </div>
+  <div class="header__mob">
+    <button type="button" class="header__mob-icon btn-reset">
+      <svg aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header__wrap-top animate__animated animate__fast">
+    <div class="header__top container">
+      <div class="header__top-container">
+        <a href="index.html" class="header__logo logo">
+          <img src="static/img/logo/logo-violet.png" alt="Логотип">
+        </a>
+        <div class="header__right">
+          <div class="header__right-top">
+            <div class="header__time">
+              <p class="header__time-info">
+                Понедельник-Воскресенье<br>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info">
+                Понедельник-Воскресенье<br>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
+                Пн-Вс:
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
+                Пн-Вс:
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+            </div>
+
+            <button type="button" class="header__appointment appointment popup__link btn-reset"
+              data-da=".header__mob,767, last">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
+              </svg>
+              <span>Записаться</span>
+            </button>
+
+            <div class="header__right-block">
+              <button type="button" class="header__nav-btn btn-reset">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="header__right-bottom">
+            <div class="header__icons">
+              <img src="static/img/icon/coffee-solid.svg" alt="Кофе">
+              <img src="static/img/icon/wifi-solid.svg" alt="wi-fi">
+              <img src="static/img/icon/armchair-svgrepo-com.svg" alt="Кресло">
+            </div>
+            <div class="header__phone phone">
+              <a href="tel:+74956499839" class="phone__link  phone__link--big">
+                + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
+              <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
+                <svg aria-hidden="true">
+                  <use xlink:href="static/img/symbol/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__wrap-bottom container animate__animated animate__fast">
+    <div class="header__bottom">
+
+      <nav class="header__nav nav" data-da=".header__nav-lg,992, first">
+        <button class="header__icon-close btn-reset">
+        </button>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="our-services.html" class="nav__link nav__link--border">Автосервис
+            </a>
+            <button type="button" class="nav__box-icon btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+              </svg>
+            </button>
+            <div class="nav__mega-menu mega-menu">
+              <div class="mega-menu__container container row">
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Аргоновая сварка</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Прайс-лист на услуги сервиса</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Бесплатный Эвакуатор</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Комплексная диагностика автомобиля</a>
+                    <ul class="sub-1__sub sub-2 list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Компьютерная диагностика, электрика</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Заправка кондиционера автомобиля</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт стартеров и генераторов</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт глушителя</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Промывка радиатора</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт двигателя</a>
+                    <ul class="sub-1__sub-2 sub-2  list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Диагностика двигателя</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт ходовой</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт КПП</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Кузовной ремонт</a>
+                    <ul class="sub-1__sub-2 sub-2  list-reset">
+                      <li class="sub-2__item">
+                        <a href="#" class="sub-2__link">Покраска</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Установка автосигнализаций</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт ГУР</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт коммерческого транспорта</a>
+                  </li>
+                </ul>
+
+                <ul class="mega-menu__list col">
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Ремонт дизельных топливных систем</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Выезд мастера по Митино. СЗАО</a>
+                  </li>
+                  <li class="mega-menu__item">
+                    <a href="#" class="mega-menu__link">Запчасти на все авто</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="auto-zapchasti.html" class="nav__link">Автозапчасти</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сход-развал</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Шиномонтаж
+            </a>
+            <button type="button" class="nav__box-icon btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+              </svg>
+            </button>
+            <ul class="nav__sub-1 sub-1 list-reset">
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Сезонное хранение резины(шин)</a>
+              </li>
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Ремонт литых дисков</a>
+              </li>
+              <li class="sub-1__item">
+                <a href="#" class="sub-1__link">Ремонт боковых порезов</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Замена масла</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Тюнинг</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="about-us.html" class="nav__link">О сервисе</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <form action="" class="header__search search" data-da=".header__right-block,992, first">
+          <button type="submit" class="search__btn btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <input type="search" id="search" placeholder="Search …" class="search__input">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__nav-lg"></div>
+  </div>
+  <!--/container-->
+</header>
+
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="intro">
+    <div class="intro-slider swiper">
+      <div class="intro-slider__wrapper swiper-wrapper">
+        <div class="intro-slider__slide swiper-slide">
+          <img class="intro-slider__img" src="static/img/bc/slide1.jpg" alt="слайд1">
+          <div class="intro-slider__text-wrap container">
+            <p class="intro-slider__subtitle">Не заводится автомобиль, заклинило колесо – теперь есть простое решение!
+            </p>
+            <h2 class="intro-slider__title">БЕСПЛАТНЫЙ ЭВАКУАТОР</h2>
+            <p class="intro-slider__text">У Нас появился свой Эвакуатор, который БЕСПЛАТНО доставит Ваш автомобиль к нам
+              в сервис для дальнейшего ремонта!<br> Есть возможность не приезжать на эвакуаторе самому, а просто
+              доверить
+              доставку авто нам!</p>
+          </div>
+        </div>
+        <div class="intro-slider__slide swiper-slide">
+          <img class="intro-slider__img" src="static/img/bc/slide2.jpg" alt="слайд2" style="object-position: 67%;">
+          <div class="intro-slider__text-wrap container">
+            <p class="intro-slider__subtitle">Мы работаем с 2000 года. Имеем большой опыт по обслуживанию автомобилей
+            </p>
+            <h2 class="intro-slider__title">Техническое обслуживание автомобилей</h2>
+            <p class="intro-slider__text">Компания PITBOX – это качественный автосервис в Митино</p>
+            <ul class="intro-slider__list list-reset">
+              <li class="intro-slider__item">авторизованный пункт продажи Motul, Shell, Castrol, Mobil;</li>
+              <li class="intro-slider__item">ремонт авто Митино различных марок;</li>
+              <li class="intro-slider__item">широкий спектр оказываемых услуг;</li>
+              <li class="intro-slider__item">запчасти на все авто</li>
+            </ul>
+          </div>
+        </div>
+        <div class="intro-slider__slide swiper-slide">
+          <img class="intro-slider__img" src="static/img/bc/slide3.jpg" alt="слайд3">
+          <div class="intro-slider__text-wrap container">
+            <p class="intro-slider__subtitle">Приобретая и устанавливая запчасти у нас – получайте доп. гарантию!
+            </p>
+            <h2 class="intro-slider__title">Автозапчасти</h2>
+            <ul class="intro-slider__list list-reset">
+              <li class="intro-slider__item">Собственный склад автозапчастей</li>
+              <li class="intro-slider__item">Экспресс доставка</li>
+              <li class="intro-slider__item">Низкие цены</li>
+            </ul>
+            <p class="intro-slider__text">Масляные фильтры, воздушные фильтры, салонные фильтры, топливные фильтры,
+              свечи зажигания, тормозные колодки, щетки стеклоочистителя, автотовары, автолампы предохранители,
+              автохимия, незамерзающая жидкость, рычаги подвески, стартеры, генераторы, стойки стабилизатора и многое
+              другое!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-slider__box-btn btn-box">
+      <div class="intro-slider__btn-prev btn-prev">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+        </svg>
+      </div>
+      <div class="intro-slider__btn-next btn-next">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- /intro-slider__box-btn -->
+  </div>
+  <!--/intro-->
+
+  <section class="promo">
+    <div class="container promo__container">
+      <div class="promo__left">
+        <div class="promo__title">
+          <span class="promo__title-top">After Hours</span>
+          <span class="promo__title-bottom">Drop-OFF</span>
+        </div>
+      </div>
+      <div class="promo__center">
+        <p class="promo__desc">
+          We realize that you lead a busy life, so we have made it easy for you to drop off your vehicle 24/7.</p>
+        <div class="promo__wrap-img">
+          <img src="static/img/bc/banner-key-new.png" alt="Ключ">
+        </div>
+      </div>
+      <div class="promo__right">
+        <a href="#" class="promo__btn btn btn-border">
+          <span>Get Estimate</span></a>
+      </div>
+    </div>
+    <!--/container-->
+  </section>
+  <!--/promo-->
+
+  <section class="direction">
+    <div class="container direction__container">
+      <h2 class="direction__title">Основные направления</h2>
+      <p class="direction__title-desc title-desc">Мы предлагаем полный комплекс услуг по ремонту и обслуживанию
+        автомобилей.</p>
+      <span class="title-separator"></span>
+      <div class="direction__wrap">
+        <div class="direction__block">
+          <div class="direction__wrap-text">
+            <h3 class="direction__name">Автосервис</h3>
+            <p class="direction__text">Лучший способ свести к минимуму поломки - это плановое обслуживание.</p>
+            <span class="direction__bc-text">Автосервис</span>
+          </div>
+        </div>
+        <!--/direction__block-->
+        <div class="direction__block">
+          <a href="#" class="direction__wrap-img">
+            <img src="static/img/bc/service-2-bg.jpg" alt="Фото">
+          </a>
+        </div>
+        <!--/direction__block-->
+        <div class="direction__block">
+          <div class="direction__wrap-text">
+            <h3 class="direction__name">Автозапчасти</h3>
+            <p class="direction__text">В автосервисе PitBox Вы всегда найдете качественные запчасти для иномарок от
+              производителей и дилеров.</p>
+            <span class="direction__bc-text">Автозапчасти</span>
+          </div>
+        </div>
+        <!--/direction__block-->
+        <div class="direction__block">
+          <a href="#" class="direction__wrap-img">
+            <img src="static/img/bc/service-1-bg.jpg" alt="Фото">
+          </a>
+        </div>
+        <!--/direction__block-->
+        <div class="direction__block">
+          <div class="direction__wrap-text">
+            <h3 class="direction__name direction__name--color">Шиномонтаж</h3>
+            <p class="direction__text direction__text--color">Качественный шиномонтаж – гарантия Вашей безопасности!</p>
+            <span class="direction__bc-text">Шиномонтаж</span>
+          </div>
+        </div>
+        <!--/direction__block-->
+        <div class="direction__block">
+          <a href="#" class="direction__wrap-img">
+            <img src="static/img/bc/service-3-bg.jpg" alt="Фото">
+          </a>
+        </div>
+        <!--/direction__block-->
+      </div>
+      <!--/direction__wrap-->
+    </div>
+    <!--/container-->
+  </section>
+  <!--/direction-->
+
+  <section class="advantage">
+    <div class="container">
+      <h2 class="advantage__title">100% гарантия результата</h2>
+      <p class="advantage__title-desc title-desc">Мы предлагаем полный комплекс услуг по ремонту и обслуживанию
+        автомобилей.</p>
+
+      <div class="advantage__wrap row">
+        <div class="advantage__block col">
+          <div class="advantage__icon">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#wrench"></use>
+            </svg>
+          </div>
+          <div class="advantage__content">
+            <h4 class="advantage__name">All Car Makes</h4>
+            <p class="advantage__text">
+              We provide a variety of repair and maintenance services for all car makes and models, even for exotic and
+              vintage ones.</p>
+          </div>
+        </div>
+        <!--/advantage__block-->
+        <div class="advantage__block col">
+          <div class="advantage__icon">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#cogwheel"></use>
+            </svg>
+          </div>
+          <div class="advantage__content">
+            <h4 class="advantage__name">Variety Services</h4>
+            <p class="advantage__text">
+              The main principle of our work is to offer a wide range of quality car repair services and we’ve been
+              doing it since our first day.</p>
+          </div>
+        </div>
+        <!--/advantage__block-->
+        <div class="advantage__block col">
+          <div class="advantage__icon">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#operator"></use>
+            </svg>
+          </div>
+          <div class="advantage__content">
+            <h4 class="advantage__name">Quality Support</h4>
+            <p class="advantage__text">
+              Car Repair Services offers quality support programs for any vehicles that allow them to always stay
+              fully
+              functional.</p>
+          </div>
+        </div>
+        <!--/advantage__block-->
+      </div>
+    </div>
+    <!--/container-->
+  </section>
+
+  <section class="services">
+    <span class="services__bc-text">Автосервис</span>
+    <div class="container">
+      <div class="services__wrap row">
+        <div class="services__block col">
+          <h2 class="services__title">Автосервис в Митино
+            <span>PitBox</span>
+          </h2>
+          <span class="services__separator title-separator"></span>
+          <p class="services__text">
+            Обеспечить высокоточную балансировку колес можно в нашем сервисе! У нас есть современные
+            компьютеризированные балансировочные станки и классные специалисты шиномонтажа.
+            Производя замену тормозных колодок, мы всегда соблюдаем рекомендации завода- изготовителя Вашего авто, что
+            позволяет достичь наилучшего, в плане надежности и безопасности, результата.
+          </p>
+          <button type="button" class="services__btn btn btn-reset popup__link"
+            data-da=".services__block:nth-child(2),768, last">
+            <span>Записаться на приём</span>
+          </button>
+        </div>
+
+        <div class="services__block col">
+          <ul class="services__list list-reset">
+            <li class="services__item">
+              <a href="#" class="services__link">Аргоновая сварка</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Прайс-лист на услуги сервиса</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Бесплатный Эвакуатор</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Комплексная диагностика автомобиля</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Заправка кондиционера автомобиля</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт стартеров и генераторов</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт глушителя</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Промывка радиатора</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт двигателя</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Диагностика двигателя</a>
+            </li>
+          </ul>
+          <button type="button" class="services__more-btn btn-reset">+ More Services</button>
+        </div>
+
+        <div class="services__block col">
+          <ul class="services__list services__list-more list-reset" data-da=".services__block:nth-child(2),992, last">
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт ходовой</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт КПП</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Кузовной ремонт</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Покраска</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Установка автосигнализаций</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт ГУР</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт коммерческого транспорта</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Ремонт дизельных топливных систем</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Выезд мастера по Митино. СЗАО</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Запчасти на все авто</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/container-->
+  </section>
+
+  <section class="promo-sale">
+    <div class="promo-sale__container container">
+      <div class="promo-sale__wrap">
+        <div class="promo-sale__block-img">
+          <div class="promo-sale__wrap-img">
+            <img src="static/img/bc/img-parallax-left.jpg" alt="Фото">
+          </div>
+          <div class="promo-sale__clip">
+            <p class="promo-sale__clip-name">
+              При заказе на сайте - скидка 5%</p>
+            <div class="promo-sale__wrap-btn">
+              <button type="button" class="promo-sale__btn btn btn-reset popup__link">
+                <span>Записаться на приём</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="promo-sale__block-desc">
+          <h2 class="promo-sale__title">Техобслуживание в Митино? <span>Сервис авто Пит Бокс!</span></h2>
+          <span class="promo-sale__title-separator title-separator"></span>
+
+          <p class="promo-sale__text">Мы предлагаем своим клиентам широкий ассортимент услуг по техобслуживанию авто:
+          </p>
+          <ul class="promo-sale__list list-reset">
+            <li class="promo-sale__item">выполнение замены масла в ДВС, МКПП, АКПП;</li>
+            <li class="promo-sale__item">широкий выбор масел Shell, Motul, Mobil, Castrol в бочках;</li>
+            <li class="promo-sale__item">замена масла за 15 минут;</li>
+            <li class="promo-sale__item">техобслуживание автомобиля;</li>
+            <li class="promo-sale__item">услуги шиномонтажа;</li>
+            <li class="promo-sale__item">сход-развал;</li>
+            <li class="promo-sale__item">услуги по заправке кондиционера.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stages-work">
+    <h2 class="stages-work__title">Этапы
+      <span>работы</span>
+    </h2>
+    <p class="stages-work__title-desc title-desc">Эти несколько шагов помогут вам понять, как работает наш сервис.</p>
+
+    <div class="stages-work__slider swiper">
+      <div class="stages-work__wrapper swiper-wrapper">
+        <div class="stages-work__slide swiper-slide">
+          <div class="stages-work__wrap-img">
+            <img src="static/img/bc/promo02-img-01.jpg" alt="Фото">
+            <span class="stages-work__marker">1</span>
+            <h4 class="stages-work__name">Make an<br> Appointment</h4>
+          </div>
+        </div>
+        <!--/swiper-slide-->
+        <div class="stages-work__slide swiper-slide">
+          <div class="stages-work__wrap-img">
+            <img src="static/img/bc/promo02-img-02.jpg" alt="Фото">
+            <span class="stages-work__marker">2</span>
+            <h4 class="stages-work__name">Select Services</h4>
+          </div>
+        </div>
+        <!--/swiper-slide-->
+        <div class="stages-work__slide swiper-slide">
+          <div class="stages-work__wrap-img">
+            <img src="static/img/bc/promo02-img-03.jpg" alt="Фото">
+            <span class="stages-work__marker">3</span>
+            <h4 class="stages-work__name">
+              Select Quote, <br>
+              Confirm Request
+            </h4>
+          </div>
+        </div>
+        <!--/swiper-slide-->
+        <div class="stages-work__slide swiper-slide">
+          <div class="stages-work__wrap-img">
+            <img src="static/img/bc/promo02-img-04.jpg" alt="Фото">
+            <span class="stages-work__marker">4</span>
+            <h4 class="stages-work__name">
+              Get Your Car
+            </h4>
+          </div>
+        </div>
+        <!--/swiper-slide-->
+      </div>
+      <!--/swiper-wrapper-->
+      <div class="stages-work__pagination swiper-pagination"></div>
+    </div>
+    <!--/swiper-->
+  </section>
+
+  <section class="promo-2">
+    <div class="container">
+      <div class="promo-2__wrap row">
+        <div class="promo-2__block col">
+          <h2 class="promo-2__title">Автосервис в Митино. Замена масла</h2>
+          <div class="promo-2__text">Если Вы ищите хороший автосервис в Митино, приезжайте к нам! Мы любим свою работу и
+            отвечаем за качество, поэтому с нами так комфортно и удобно.</div><br>
+          <p class="promo-2__text promo-2__text--bold">Каждый наш клиент может рассчитывать на:</p>
+          <ul class="promo-2__list list-reset">
+            <li class="promo-2__item">
+              отличное обслуживание и индивидуальный подход;
+            </li>
+            <li class="promo-2__item">
+              получение гарантии на все виды выполненных работ;
+            </li>
+            <li class="promo-2__item">
+              высокое качество выполненных работ;
+            </li>
+            <li class="promo-2__item">
+              широкий спектр предоставляемых услуг.
+            </li>
+          </ul>
+        </div>
+        <div class="promo-2__block col">
+          <img src="static/img/bc/avtoservisy-v-mitino-adresa.jpeg" alt="Автосервис">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <span class="testimonials__bc-text">Отзывы</span>
+    <div class="testimonials__slider swiper">
+      <div class="testimonials__wrapper swiper-wrapper">
+        <div class="testimonials__slide swiper-slide">
+          <div class="testimonials__wrap-img">
+            <img src="static/img/testimonials/testimonial1-178x179.jpg" alt="Пользователь">
+            <span></span>
+          </div>
+          <p class="testimonials__text">Вчера менял масло в Pitbox – потратил 30 минут на замену передних колодок и
+            масла в двигателе. Масло, фильтр и колодки брал на месте (говорят есть на все авто). Неожиданно быстро,
+            всегда бы так! Спасибо, буду приезжать еще.)</p>
+          <p class="testimonials__author">
+            <span class="testimonials__author--color">Михаил</span> Electrician
+          </p>
+        </div>
+        <!--/swiper-slide-->
+        <div class="testimonials__slide swiper-slide">
+          <div class="testimonials__wrap-img">
+            <img src="static/img/testimonials/testimonial2-370x370.jpg" alt="Пользователь">
+            <span></span>
+          </div>
+          <p class="testimonials__text">Ремонтировал подвеску на Camry? Заменили передние амортизаторы, рулевые тяги с
+            наконечниками и сделали сход-развал. Машина стала как новая). Спасибо мастеру Сергею.</p>
+          <p class="testimonials__author">
+            <span class="testimonials__author--color">Александр</span> Electrician
+          </p>
+        </div>
+        <!--/swiper-slide-->
+        <div class="testimonials__slide swiper-slide">
+          <div class="testimonials__wrap-img">
+            <img src="static/img/testimonials/section-blog-img01.jpg" alt="Пользователь">
+            <span></span>
+          </div>
+          <p class="testimonials__text">Каждый год делаю шиномонтаж. Никогда не подводили. В сезон можно занять очередь
+            по телефону и не ждать 3 часа. Спасибо Оксане, которая там работает по-моему лет 15.</p>
+          <p class="testimonials__author">
+            <span class="testimonials__author--color">Семен</span> Electrician
+          </p>
+        </div>
+        <!--/swiper-slide-->
+      </div>
+      <!--/swiper-wrapper-->
+      <div class="testimonials__pagination swiper-pagination"></div>
+    </div>
+    <!--/swiper-->
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__map">
+    <iframe style="border: 0;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.109248728665!2d37.34464701195486!3d55.860770920549676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a3d7decd64220a4!2zUGl0Qm94LCDQsNCy0YLQvtGB0LXRgNCy0LjRgQ!5e0!3m2!1sru!2s!4v1410201969212"
+      width="100%" height="420" frameborder="0"></iframe>
+    <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.096029402135!2d37.34225571579425!3d55.86100028058243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5f4aea25f48edd1!2zNTXCsDUxJzM5LjYiTiAzN8KwMjAnNDAuMCJF!5e0!3m2!1sru!2sby!4v1636969158216!5m2!1sru!2sby"
+      width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  </div>
+  <div class="footer__container container">
+    <div class="footer__contact">
+      <p class="footer__title">Контакты</p>
+      <p class="footer__address address">ул. Барышиха, 57 а, Москва, Россия, 125310</p>
+      <div class="footer__phone phone">
+        <a href="tel:+74956499839" class="phone__link">
+          + 7 (495) 649-98-39</a>
+      </div>
+      <a href="#" class="footer__email email">info@pitbox.ru</a>
+
+      <p class="footer__title">Часы работы</p>
+      <p class="footer__time time">
+        Пн-Вс: <span>9:00 - 22:00</span>
+      </p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-wrap container">
+      <p class="footer__copyright"> © pitbox.ru 2008-2021. Все права защищены.</p>
+      <a href="https://pitbox.ru" class="footer__link">Автосервис Митино</a>
+    </div>
+  </div>
+</footer>
+
+<div class="popup__wrap">
+
+  <div id="popup-order" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__header">
+          <button type="button" class="popup__appointment appointment btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
+            </svg>
+            <span>Записаться</span>
+          </button>
+          <button type="button" class="popup__close btn-reset"></button>
+        </div>
+        <div class="popup__desc">
+          <h3 class="popup__title">Записаться <span>на приём</span></h3>
+          <p>Чтобы записаться на прием, позвоните нам по телефону + 7 (495) 649-98-39 или заполните форму ниже, указав
+            свою
+            информацию и запрашиваемые услуги.</p>
+
+          <form action="" class="popup__form form">
+
+            <div class="popup__form-row">
+
+              <div class="popup__form-col">
+                <h4 class="popup__form-title">Контакты</h4>
+
+                <div class="popup__form-box-input form__box-input">
+                  <input class="popup__form-input form__input" type="text" id="popup-name" required placeholder="Имя">
+
+                  <input class="popup__form-input form__input" type="text" id="popup-phone" required
+                    placeholder="Телефон">
+                  <select name="service" id="service" class="popup__form-select form__input" aria-required="true"
+                    aria-invalid="false">
+                    <option value="Сервис-1" selected>Сервис 1</option>
+                    <option value="Сервис-2">Сервис 2</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="popup__form-col-wide">
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">Информация об авто</h4>
+
+                  <div class="popup__form-box-input form__box-input">
+                    <input class="popup__form-input form__input" type="text" id="popup-model"
+                      placeholder="Марка и модель">
+
+                    <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Год выпуска">
+                  </div>
+                </div>
+
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">
+                    Детали встречи</h4>
+
+                  <div class="popup__form-box-input form__box-input">
+                    <div class="popup__form-wrap-date popup__form-wrap-date">
+                      <input class="popup__form-input form__input" placeholder="Дата" type="text"
+                        onfocus="(this.type='date')" id="date">
+                    </div>
+
+                    <div class="popup__form-wrap-time popup__form-wrap-time">
+                      <input class="popup__form-input form__input" type="text" onfocus="(this.type='time')" id="time"
+                        placeholder="10:00">
+                    </div>
+                  </div>
+                </div>
+
+                <textarea class="popup__form-textarea form__input" placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+
+            <div class="popup__wrap-btn">
+              <button type="submit" class="popup__btn btn btn-reset">
+                <span>Записаться</span>
+              </button>
+              <p class="popup__btn-text">Обратите внимание, что запрошенные вами дата и время могут быть
+                недоступны.
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--/popup__content-->
+    </div>
+    <!--/popup__body-->
+  </div>
+  <!--/popup-->
+</div>
+
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+
+      <a href="index.html" class="header__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 767px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+
+      </a>
+
+      <form class="header__search search">
+        <div class="search__wrap-input">
+          <input type="text" class="search__input" name="search" placeholder="Поиск по сайту">
+          <button type="submit" class="search__btn btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="header__phone phone">
+        <a class="phone__link" href="tel:+74952258338">+7 (495) 225-83-38
+        </a>
+        <a class="phone__link" href="tel:+79855333568">+7 (985) 533-35-68
+        </a>
+      </div>
+
+      <div class="header__address address">
+        <span class="address__location">г. Москва, Тверской бульвар, д. 26</span>
+        <span class="address__parking">бесплатная парковка</span>
+      </div>
+
+      <div class="header__arrow-wrap">
+        <button type="button" class="header__arrow btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#chevron-down"></use>
+          </svg>
+        </button>
+        <div class="header__modal modal">
+          <div class="modal__left">
+            <picture>
+              <source srcset="static/img/map-tab.png" media="(max-width: 991px)">
+              <img src="static/img/map.png" alt="Карта">
+            </picture>
+          </div>
+
+          <div class="modal__right">
+            <div class="modal__phone phone">
+              <a class="phone__link" href="tel:+74952258338">+7 (495) 225-83-38
+              </a>
+              <a class="phone__link" href="tel:+79855333568">+7 (985) 533-35-68
+              </a>
+            </div>
+            <div class="modal__address address">
+              <span class="address__location">г. Москва, Тверской бульвар, д. 26</span>
+              <span class="address__parking">бесплатная парковка</span>
+            </div>
+            <div class="modal__time time">
+              Работаем ежедневно с 12:00 до 23:00
+            </div>
+            <div class="modal__email email">
+              <a class="email__link" href="#">turandot-antique@maison-dellos.com
+              </a>
+            </div>
+            <div class="modal__social-wrap">
+              <h2 class="modal__social-title title-2">
+                Мы в социальных сетях:
+              </h2>
+              <div class="modal__social social">
+                <a href="#" class="social__link">
+                  <svg class="social__svg" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__svg" aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="modal__wrap-btn">
+              <button type="button" class="modal__btn btn btn-reset">Открыть карту</button>
+            </div>
+          </div>
+          <!--/modal__right-->
+        </div>
+        <!--/modal__container-->
+      </div>
+    </div>
+    <!--/header-top-->
+
+    <div class="header__bottom">
+      <div class="header__icon-menu icon__menu">
+        <span></span>
+      </div>
+      <nav class="header__nav nav">
+        <div class="header__icon-menu icon__menu icon__menu--close">
+          <!-- <span></span> -->
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <ul class="nav__list list-reset">
+          <li class="nav__item nav__item--submenu">
+            <a href="catalog.html" class="nav__link nav__link--icon">КАТАЛОГ</a>
+            <div class="nav__sub-menu sub-menu">
+              <div class="sub-menu__wrap-col col">
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Антикварные подарки</h2>
+                  </a>
+                  <a href="#" class="sub-menu__link">
+                    Корпоративные подарки
+                  </a>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Антикварные картины</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Европа
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Россия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Вазы, кашпо</h2>
+                  </a>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Венская бронза</h2>
+                  </a>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Винтаж</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Аксессуары
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Бижутерия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Зеркала</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Настенные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Настольные
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+              </div>
+              <!--/sub-menu__wrap-col-->
+              <div class="sub-menu__wrap-col col">
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Мебель</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Диваны, Кресла и Стулья
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Кабинеты
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Комоды
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Кассапанки и Кассоне
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Столы
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Тумбы, Консоли и Торшеры
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Шкафы, витрины, этажерки
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Техника и приборы</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Барометры, термометры
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Корабельные принадлежности
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Масштабные модели
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Модели паровых машин
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Фарфор</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Европа
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Россия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+              </div>
+              <!--/sub-menu__wrap-col-->
+
+              <div class="sub-menu__wrap-col col">
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Камины и принадлежности</h2>
+                  </a>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Осветительные приборы</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Люстры
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Бра
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Подсвечники и Канделябры
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Торшеры и Лампы
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Фонари
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Серебро</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Европа
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Россия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Скульптура</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Бронза
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Фарфор
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Мрамор
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Другое
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+              </div>
+              <!--/sub-menu__wrap-col-->
+
+              <div class="sub-menu__wrap-col col">
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Часы</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Каминные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Карманные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Напольные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Наручные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Настенные
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Настольные
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Стекло, хрусталь</h2>
+                  </a>
+                </div>
+                <!--/sub-menu__wrap-item-->
+
+                <div class="sub-menu__wrap-item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Ювелирные изделия</h2>
+                  </a>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Браслеты
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Броши
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Запонки
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Кольца и Серьги
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Подвески и Колье
+                      </a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">
+                        Разное
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--/sub-menu__wrap-item-->
+              </div>
+              <!--/sub-menu__wrap-col-->
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">НОВОСТИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">АКАДЕМИЯ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">НАШИ ПРОЕКТЫ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">ИСТОРИЯ РОСКОШИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__cart btn-reset" type="button"></button>
+    </div>
+
+    <!-- <div class="header__icon-menu icon__menu">
+      <span></span>
+    </div> -->
+  </div>
+</header>
+
+
+<main class="main">
+
+  <div class="container">
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">Turandot-antique.Ru – антиквариат
+        <span class="breadcrumb__link-el">&#47;</span>
+      </a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">Каталог
+        <span class="breadcrumb__link-el">&#47;</span>
+      </a>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item--current">Антикварная мебель</li>
+  </ul>
+</div>
+
+
+  <div class="container">
+    <svg aria-hidden="true">
+      <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+    </svg>
+  </div>
+  <!--/container-->
+
+  <picture>
+    <source srcset="" media="(min-width: 575.98px)">
+    <img src="" alt="">
+  </picture>
+</main>
+
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__top row">
+      <nav class="footer__nav nav col">
+        <h2 class="footer__title title-2">Меню</h2>
+        <button type="button" class="footer__btn btn-reset"></button>
+        <div>
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Академия</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Наши проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">История роскоши</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <a href="#" class="footer__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 767px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+      </a>
+
+      <nav class="footer__sub-nav nav col">
+        <h2 class="footer__title title-2">Коллекции</h2>
+        <button type="button" class="footer__btn btn-reset"></button>
+        <div>
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Антикварные подарки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Вазы, кашпо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Венская бронза</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Антикварные картины</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Зеркала</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Камины и принадлежности</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Мебель</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Техника и приборы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Осветительные приборы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Серебро</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Скульптура</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Фарфор</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Стекло, хрусталь</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Часы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Ювелирные изделия</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Винтаж</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Разное</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__contacts contacts col">
+        <h2 class="footer__title title-2">Контакты</h2>
+        <button type="button" class="footer__btn btn-reset"></button>
+        <div>
+          <div class="footer__address address">
+            <span class="address__location">г. Москва, Тверской бульвар,<br> д. 26</span>
+          </div>
+          <div class="footer__phone phone">
+            <a class="phone__link" href="tel:+74952258338">+7 (495) 225-83-38
+            </a>
+            <a class="phone__link" href="tel:+79855333568">+7 (985) 533-35-68
+            </a>
+          </div>
+          <div class="footer__email email">
+            <a class="email__link" href="#">turandot-antique@maison-dellos.com
+            </a>
+          </div>
+          <div class="footer__time time">
+            Работаем ежедневно<br>
+            с 12:00 до 23:00
+          </div>
+
+          <div class="footer__social social">
+            <a href="#" class="social__link">
+              <svg class="social__svg" aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__svg" aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__svg" aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom copyright">
+      <p class="copyright__text">Все права защищены © ГАЛЕРЕЯ «ТУРАНДОТ АНТИК», 1997-2021</p>
+      <a href="#" class="copyright__text">Политика конфиденциальности</a>
+      <a href="#" class="copyright__text">Пользовательское соглашение</a>
+      <a href="#" class="copyright__text">Антикварный магазин</a>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>

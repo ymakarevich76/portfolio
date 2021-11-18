@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+
+      <a href="index.html" class="header__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 1199px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+      </a>
+      <div class="header__info">
+        <div class="header__time time">
+          Ежедневно<br>
+          с 10-00 до 21-00
+        </div>
+
+        <div class="header__phone phone">
+          <a class="phone__link" href="tel:+749515045128">+7 (495) 150-45-12
+          </a>
+          <a class="phone__link" href="tel:+78005003412">+7 (800) 500-34-12
+          </a>
+        </div>
+
+        <div class="header__address address">
+          г. Москва, ул. 1-ая<br>
+          Мытищинская 27с1
+        </div>
+      </div>
+
+      <div class="header__dynamic">
+        <form class="header__search search">
+          <div class="search__wrap-input">
+            <input type="text" class="search__input" name="search">
+            <button type="submit" class="search__btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="header__social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+
+        <div class="header__wrap-btn header__wrap-btn--tab">
+          <a href="#" class="header__heart btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
+            </svg>
+            <span class="header__heart-count">0</span>
+          </a>
+          <a href="user.html" class="header__user btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+            </svg>
+          </a>
+          <a href="cart.html" class="header__cart">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="header__icon-menu icon__menu btn-reset"></button>
+    </div>
+
+    <!--/header-top-->
+
+    <div class="header__bottom">
+      <nav data-da=".header__menu-container,992, last" class="header__nav nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="#" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Клиентам</a>
+          </li>
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Оплата и Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="problem.html" class="nav__link">Проблема-решение</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Партнеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__wrap-btn">
+        <a href="#" class="header__heart btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
+          </svg>
+          <span class="header__heart-count">0</span>
+        </a>
+        <a href="user.html" class="header__user btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a href="cart.html" class="header__cart">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+          </svg>
+          <span class="header__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!--/container-->
+
+
+  <nav class="header__menu menu">
+    <button class="header__icon-close icon__close btn-reset">
+    </button>
+    <div class="header__menu-container">
+      <ul class="menu__list list-reset">
+        <li class="menu__item">
+          <div class="menu__wrap-link-btn">
+            <a href="#" class="menu__link">МОЙКА И УХОД</a>
+            <button class="btn-chevron btn-reset">
+              <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+            </button>
+          </div>
+          <div class="sub-menu">
+            <div class="sub-menu__container container">
+              <ul class="sub-menu__row row list-reset">
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Мойка</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Ручная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Бесконтактная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Нано мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Воски для сушки и консервации</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за мотоциклами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за лодками и яхтами</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Экстерьер</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка кузова</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за резиной и внешним пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка дисков</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка моторного отсека</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за хромом и металлами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Полировочная глина</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Интерьер</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за тканью</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за стеклом</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за кожей</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Реставрация кожи</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__col col">
+                  <div class="sub-menu__wrap-link-btn">
+                    <a href="#" class="sub-menu__title">Освежители воздуха</a>
+                    <button class="btn-chevron btn-reset">
+                      <img width="14" height="14" src="static/img/icon/chevron-down.svg" alt="chevron">
+                    </button>
+                  </div>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха подвесные</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха в виде спрея</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха сухие и гелевые</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--/sub-menu__container-->
+          </div>
+          <!--/sub-menu-->
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПОЛИРОВКА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ЗАЩИТА ПОВЕРХНОСТЕЙ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПЛЁНКИ И ИНСТРУМЕНТ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСХОДНИКИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">МАРКЕТИНГ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ОБОРУДОВАНИЕ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСПРОДАЖА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">БРЕНДЫ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="item">
+    <div class="item__insert insert insert--second">
+      <div class="container">
+        <h1 class="insert__title title-1">полировка</h1>
+      </div>
+      <!--/container-->
+    </div>
+    <div class="container">
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">Главная</a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">каталог</a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link link" href="#">мойка и уход</a>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item--current">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с
+      долгосрочным
+      защитным эффектом</li>
+  </ul>
+</div>
+
+
+    <div class="container">
+      <ul class="accord list-reset">
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Чем обезжирить кузов авто</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Полировка авто</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Мицеллярная жидкость без спирта</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Краска для отражателей</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Абразивная полироль</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accord__item">
+          <button class="accord__btn btn-reset">Сушка авто</button>
+          <div class="accord__content">
+            <ul class="accord__list-link list-reset">
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем убрать разводы</a>
+              </li>
+              <li class="accord__item-link">
+                <a class="accord__link" href="#">Чем полировать черную машину</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__left">
+      <a href="index.html" class="footer__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-footer-mob.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 1199px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+      </a>
+      <nav class="footer__nav nav">
+        <ul class="nav__list list list-reset">
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">О компании</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Клиентам</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Каталог</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Оплата и Доставка</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Партнеры</a>
+          </li>
+          <li class="nav__item list__item">
+            <a href="#" class="nav__link list__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="footer__left-social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__right">
+      <div class="footer__info-left">
+        <div class="footer__phone phone">
+          <a class="phone__link" href="tel:+749515045128">+7 (495) 150-45-12
+          </a>
+          <span class="phone__text">или</span>
+          <a class="phone__link" href="tel:+78005003412">+7 (800) 500-34-12
+          </a>
+        </div>
+        <!--/phone-->
+
+        <div class="footer__email email">
+          <div class="email__wrap">
+            <a class="email__link" href="#">shop@leraton.ru
+            </a>
+            <span class="email__text">- заказы</span>
+          </div>
+          <div class="email__wrap">
+            <a class="email__link" href="#">office@leraton.ru
+            </a>
+            <span class="email__text"> - вопросы сотрудничества</span>
+          </div>
+        </div>
+        <!--/email-->
+
+        <div class="footer__address address">
+          г. Москва, ул. 1-ая Мытищинская 27с1
+        </div>
+
+        <div class="footer__time time">
+          <span>с</span> 10-00 <span>до</span> 21-00
+        </div>
+
+        <p class="footer__delivery">
+          Доставка по всей территории РФ и в страны СНГ!<br> Оперативно. Удобным для вас способом!
+        </p>
+      </div>
+      <div class="footer__info-right">
+        <div class="footer__pay">
+          <p class="footer__pay-text">Мы принимаем к оплате:</p>
+          <div class="footer__pay-wrap-img">
+            <img class="footer__pay-img" src="static/img/pay/1.png" alt="MasterCard">
+            <img class="footer__pay-img" src="static/img/pay/2.png" alt="Связной">
+            <img class="footer__pay-img" src="static/img/pay/3.png" alt="Сбербанк">
+            <img class="footer__pay-img" src="static/img/pay/4.png" alt="Visa">
+            <img class="footer__pay-img" src="static/img/pay/5.png" alt="Кошелек pay">
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">Интернет-магазин и служба доставки<br> LERATON Shop, <br> © 2016-2021
+            LERATON MOSCOW</p>
+        </div>
+        <div class="footer__social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>
