@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<section class="preloader">
+  <div class="preloader__wrap">
+    <img class="preloader__img" src="static/img/icon/insert.svg" alt="">
+
+    <div class="preloader__logo">
+      <div class="preloader__logo-text wow animate__animated animate__fadeInDown" data-wow-delay="1s">
+        GO TRAVEL WITH
+      </div>
+      <div class="preloader__logo-part-1 wow animate__animated animate__fadeInDown" data-wow-delay="0.8s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#president"></use>
+        </svg>
+      </div>
+      <div class="preloader__logo-part-2 wow animate__animated animate__fadeInDown" data-wow-delay="0.6s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#travel"></use>
+        </svg>
+      </div>
+
+      <div class="preloader__logo-part-3 wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#luxury"></use>
+        </svg>
+      </div>
+
+      <div class="preloader__logo-part-3 wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#worldwide"></use>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<header class="header header-blur">
+  <div class="container header__container">
+    <div class="header__left">
+      <a href="#" class="header__logo logo">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="3.5s">
+            <a href="#" class="nav__link">Путешествия</a>
+          </li>
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="3.7s">
+            <a href="#" class="nav__link">Чартер</a>
+          </li>
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="3.9s">
+            <a href="#" class="nav__link">Размещение</a>
+          </li>
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="4s">
+            <a href="#" class="nav__link">Сервис</a>
+          </li>
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="4.2s">
+            <a href="#" class="nav__link">Блог</a>
+          </li>
+          <li class="nav__item wow animate__animated animate__fadeInDown" data-wow-delay="4.5s">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <button type="button" class="header__btn btn wow animate__animated animate__fadeInDown popup__link"
+        data-wow-delay="4.7s">Оставить заявку</button>
+      <div class="header__phone-wrap wow animate__animated animate__fadeInDown" data-wow-delay="4.8s">
+        <a href="tel:74959687771" class="phone">+7 495 968 777 1</a>
+        <a href="tel:74959687771" class="phone">+7 495 968 777 1</a>
+      </div>
+      <div class="header__lang lang wow animate__animated animate__fadeInDown" data-wow-delay="4.9s">
+        <a href="#" class="lang__link">ENG</a>
+        <a href="#" class="lang__link lang__link--active">RUS</a>
+      </div>
+      <button type="button" class="header__search btn-reset wow animate__animated animate__fadeInDown"
+        data-wow-delay="5s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+        </svg>
+        <span>Поиск</span>
+      </button>
+      <!-- <div class="header__wrap-icon-close">
+        <span class="header__icon-close"></span>
+      </div> -->
+    </div>
+  </div>
+</header>
+
+<header class="header header-xl">
+  <div class="container header-xl__container">
+    <div class="header-xl__left">
+      <a class="header__home">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#home"></use>
+        </svg>
+      </a>
+      <button type="button" class="header__btn btn popup__link" data-wow-delay="4.7s">Оставить заявку</button>
+    </div>
+    <div class="header-xl__right">
+      <a class="header__phone" href="tel:+74959687771">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+        </svg>
+      </a>
+      <button type="button" class="header__search btn-reset" data-wow-delay="5s">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <div class="header__wrap-icon">
+        <span class="header__icon"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="promo">
+    <video class="promo__video" autoplay muted preload="auto">
+      <source src="static/img/bc/main-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="promo__container container ">
+      <div class="promo__content">
+        <h1 class="wow animate__animated animate__fadeInDown" data-wow-offset="100" data-wow-delay="3.1s">PRESIDENT
+          TRAVEL
+          - INDIVIDUAL
+          TRAVELLING WORLDWIDE</h1>
+        <p class="promo__divider divider wow animate__animated animate__fadeInDown" data-wow-offset="100"
+          data-wow-delay="3.2s"></p>
+        <ul class="promo__list list-reset wow animate__animated animate__fadeInDown" data-wow-offset="100"
+          data-wow-delay="3.1s">
+          <li class="promo__item">организация вашего отдыха</li>
+          <li class="promo__item">консьерж-сервис 24/7</li>
+          <li class="promo__item">аренда яхт, вилл,<br>суперкаров и бизнес джетов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="promo__left">
+      <p class="wow animate__animated animate__bounceInLeft" data-wow-delay="3s">Individual Travelling<br>Worldwide</p>
+    </div>
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <p class="popular__left">Популярные туры</p>
+      <div class="popular-slider swiper">
+        <div class="popular-slider__wrapper swiper-wrapper">
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/1.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Мексика: Viva el verano</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Мексика</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/2.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">50 оттенков белого</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Антарктида</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/3.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Удивительная Руанда</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Руанда</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/4.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Заряд витамином D</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Мальдивы</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+        </div>
+        <!--/swiper-wrapper-->
+      </div>
+      <!--/swiper-->
+      <div class="popular-slider__box-btn btn-box">
+        <div class="popular-slider__btn-prev btn-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+        <div class="popular-slider__btn-next btn-next">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /popular-slider__box-btn -->
+    </div>
+    <!--/container-->
+  </section>
+
+  <section class="view">
+    <h2 class="wow animate__animated animate__fadeInUp">Какой вид отдыха
+      выбираете</h2>
+    <p class="view__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+    <div class="view__wrap">
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/1.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Чартер яхт</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/2.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Пляжный и Островной отдых</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="1s">
+        <img src="static/img/view/3.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Сафари</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/4.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Гастрономический</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="view__wrap">
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/1.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Чартер яхт</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link view__link--2 wow animate__animated animate__fadeIn" data-wow-delay="1s">
+        <img src="static/img/view/2.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Пляжный и Островной отдых</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/3.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Сафари</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link view__link--4 wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/8.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Гастрономический</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="season">
+    <div class="container">
+      <h2 class="wow animate__animated animate__fadeInUp">Когда планируете путешествие?</h2>
+      <p class="season__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+
+      <div class="season-slider swiper">
+        <div class="season-slider__wrapper swiper-wrapper">
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/1.jpg" alt="Весна">
+              </div>
+              <h3 class="season__title">Весна</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/2.jpeg" alt="Лето">
+              </div>
+              <h3 class="season__title">Лето</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/3.jpg" alt="Осень">
+              </div>
+              <h3 class="season__title">Осень</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/4.jpg" alt="Зима">
+              </div>
+              <h3 class="season__title">Зима</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+        </div>
+        <!--/swiper-wrapper-->
+      </div>
+      <!--/swiper-->
+      <div class="season-slider__box-btn btn-box">
+        <div class="season-slider__btn-prev btn-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+        <div class="season-slider__btn-next btn-next">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /popular-slider__box-btn -->
+    </div>
+  </section>
+
+  <section class="insert">
+    <div class="container">
+      <div class="insert__wrap">
+        <div class="insert__bc">
+          <img class="insert__bc-img" src="static/img/icon/insert.svg" alt="">
+        </div>
+
+        <div class="insert__logo">
+          <div class="insert__logo-text">
+            GO TRAVEL WITH
+          </div>
+          <div class="insert__logo-part-1">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#president"></use>
+            </svg>
+          </div>
+          <div class="insert__logo-part-2">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#travel"></use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container about__container">
+      <div class="about__desc">
+        <h2 class="about__title wow animate__animated animate__fadeInUp">О компании</h2>
+        <p class="about__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+        <p class="about__text about__text--accent wow animate__animated animate__fadeInDown" data-wow-delay="1s">
+          PRESIDENT TRAVEL – туристическая компания,
+          которая специализируется на индивидуальном
+          отдыхе и организации Гран-туров по всему миру.
+          Это команда экспертов, сделавших путешествия
+          своей профессией: страстные краеведы,
+          компетентные консьержи и агенты по аренде
+          курортных вилл и шале, яхтсмены и специалисты
+          по бизнес-авиации.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.3s">
+          В каждой стране, в каждом месте мы показываем
+          Вам его суть, даем попробовать на вкус,
+          открываем все секреты.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.6s">
+          Наши цены – всегда прозрачны, а наши
+          менеджеры – профессионалы, влюбленные в свое
+          дело. К каждому запросу у нас – особенное
+          трепетное отношение, а Ваши пожелания – для
+          нас повод для творчества.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.9s">
+          Мы учитываем Ваши вкусы, стиль жизни,
+          привычки, мечты, границы Вашего уединения и
+          создаем из этого Ваш эксклюзивный отдых.
+        </p>
+      </div>
+      <div class="about__wrap-img">
+        <img src="static/img/bc/5.jpg" alt="Img">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top row">
+      <a href="#" class="footer__logo col">
+        <img src="static/img/logo/logo-footer.svg" alt="Logo">
+      </a>
+      <nav class="footer__nav col">
+        <ul class="footer__nav-list list-reset">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Путешествия</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Яхты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Бизнес-джеты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Размещение</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Сервис</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Блог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">О нас</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Журнал</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Политика в отношении защиты и обработки персональных данных</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Как забронировать тур</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Способы оплаты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Карьера в компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts col">
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">Facebook</a>
+          <a href="#" class="footer__social-link">Instagram</a>
+        </div>
+        <p class="footer__address">Адрес: г. Москва ул. Садовая-Кудринская 32 стр. 1<br>БЦ "Бронная Плаза"</p>
+
+        <p class="footer__contacts-text">
+          Тел. <a href="tel:74959687771" class="footer__phone phone">+7 495 968 777 1</a><br>
+          <a href="tel:79055057771" class="footer__phone phone footer__phone--mrl">+7 905 505 777 1</a>
+        </p>
+
+        <p class="footer__contacts-text">E-mail:<br>
+          <span class="footer__item"><a href="#" class="footer__mail">info@presidenttravel.ru</a> - для
+            Партнеров<br></span>
+          <span class="footer__item"><a href="#" class="footer__mail">book@presidenttravel.ru</a> - для Клиентов</span>
+
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__text">Все права на содержание опубликованных на сайте https://presidenttravel.ru текстов,
+        блоков
+        страниц, идеи
+        оформления и изображений защищены в соответствии с российским и международным
+        законодательством об авторском праве и смежных правах.<br>
+        Никакая часть данного материала не может быть воспроизведена в какой бы то ни было форме и
+        какими бы то ни было средствами, включая размещение в сети Интернет и в корпоративных сетях, для
+        публичного или коллективного использования без письменного разрешения владельца.</p>
+      <p class="footer__text footer__text--sm">За нарушение авторских прав законодательством предусмотрена выплата
+        компенсации правообладателя в размере до 5 млн. рублей
+        (ст. 49 ЗОАП), а также уголовная ответственность в виде лишения свободы на срок до 6 лет (ст.
+        146 УК РФ).</p>
+    </div>
+  </div>
+</footer>
+
+<div id="popup-order" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+
+      <button type="button" class="popup__close btn-reset"></button>
+
+      <form action="" class="popup__form form">
+
+        <textarea name="tour" rows="1" class="form__field" placeholder="Куда хотите отправиться?"></textarea>
+
+        <input type="text" name="name" class="form__field" placeholder="Как к Вам обращаться" required>
+
+        <input type="tel" name="phone" class="form__field" id="phone_1" placeholder="+7 (___) ___-____" required>
+
+        <input type="text" name="email" class="form__field" placeholder="Ваш E-mail">
+
+        <textarea name="comment" rows="1" class="form__field" placeholder="Комментарии"></textarea>
+
+        <div class="form__checkbox">
+          <input class="form__checkbox-input" type="checkbox" name="agreement" required>
+          <label class="form__checkbox-label">Я согласен на использование моих <a href="#" target="_blank">персональных
+              данных</a></label>
+        </div>
+
+        <div class="popup__wrap-btn">
+          <button type="submit" class="popup__btn btn-reset" disabled>
+            <span>Заказать путешествие</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+    <!--/popup__content-->
+  </div>
+  <!--/popup__body-->
+</div>
+
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>
