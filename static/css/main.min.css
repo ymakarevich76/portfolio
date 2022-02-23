@@ -428,6 +428,7 @@ img {
     max-width: 100%;
     padding-left: 17px;
     text-align: center;
+    min-height: auto;
   }
 
   .projects__wrap-btn {
