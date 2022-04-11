@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./static/css/libs.min.css" as="style">
+  <link rel="preload" href="./static/css/main.min.css" as="style"> -->
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="header__top-container container">
+
+      <a href="index.html" class="header__wrap-logo" aria-label="Логотип">
+        <picture>
+          <source srcset="static/img/logo/logo.png" media="(min-width: 767px)">
+          <img class="header__logo" src="static/img/logo/logo-mob.png" alt="Логотип">
+        </picture>
+      </a>
+      <div class="header__contacts">
+        <div class="header__social social">
+          <a href="#" class="social__link" aria-label="Инстаграм">
+            <svg class="social__viber" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#insta"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Телеграм">
+            <svg class="social__teleg" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#teleg"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Вконтакте">
+            <svg class="social__whatsapp" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Одноклассники">
+            <svg class="social__whatsapp" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#ok"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__phone-adress phone-adress">
+          <a class="phone-adress__text" href="tel:+74951012346">+7 (495) 101–23–46
+          </a>
+          <span class="phone-adress__text">Москва, гастроли
+          </span>
+        </div>
+      </div>
+      <button class="header__burger btn-reset" type="button"></button>
+
+      <div class="header__img-bc">
+        <img src="static/img/bc/ann-bc.png" alt="Фото Анны">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="header__bottom">
+    <div class="header__bottom-container container">
+      <nav class="header__nav nav">
+        <button class="header__btn-close btn-reset"></button>
+        <ul class="header__nav-list nav__list list-reset">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="tour.html" class="nav__link">Гастроли</a></li>
+          <li class="nav__item"><a href="programs.html" class="nav__link">Программы</a></li>
+          <li class="nav__item"><a href="partners.html" class="nav__link">Наши партнеры</a></li>
+          <li class="nav__item"><a href="media.html" class="nav__link">Медийность</a></li>
+          <li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="about-us.html" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="cooperation.html" class="nav__link">Сотрудничество</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="breadcrumb container">
+  <ul class="breadcrumb__list list-reset">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="index.html">Главная</a>
+    </li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="programs.html">Программы</a>
+    </li>
+    <li class="breadcrumb__item">Цирк белых зверей</li>
+  </ul>
+</div>
+
+  <div class="main-wrapper">
+    <section class="single">
+      <h1 class="single__title">Цирк белых<br> зверей</h1>
+
+      <div class="single__wrap-video video-slider">
+        <div class="single__video-slider video-slider__slider swiper">
+          <div class="video-slider__wrapper swiper-wrapper">
+
+            <div class="video-slider__slide swiper-slide">
+              <div class="video-slider__wrap-img">
+                <img src="static/img/image-slider/1.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+            <div class="video-slider__slide swiper-slide">
+              <div class="video-slider__wrap-img">
+                <img src="static/img/image-slider/1.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+            <div class="video-slider__slide swiper-slide">
+              <div class="video-slider__wrap-img">
+                <img src="static/img/image-slider/1.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+          </div>
+          <!--/swiper-wrapper-->
+        </div>
+        <div class="video-slider__pagination slider-pagination"></div>
+        <!--/swiper-->
+
+        <div class="video-slider__box-btn btn-box">
+          <div class="video-slider__btn-prev btn-prev">
+          </div>
+          <div class="video-slider__btn-next btn-next">
+          </div>
+        </div>
+        <!-- /video-slider__box-btn -->
+      </div>
+      <!--/single__wrap-video-->
+
+      <div class="single__wrap-text container container--800">
+        <p class="single__text text">
+          Уважаемые клиенты, Царский Цирк Анны Кранц представляет Вашему вниманию уникальную, в своем роде, шоу -
+          программу «Цирк белых зверей».</p>
+
+        <p class="single__text text">
+          Это удивительное цирковое шоу для взрослых и детей, которое приводит в полный восторг всех зрителей. Как
+          можно легко понять по названию шоу, в нем участвуют исключительно животные природного белого цвета. Среди
+          них есть и редкие альбиносы, и просто забавные зверушки белого окраса.
+        </p>
+
+        <p class="single__text text">
+          Программа циркового шоу составлена таким образом, чтобы в ней гармоничным образом сочетались цирковые фокусы
+          и показательные выступления с элементами дрессуры. Обращаем Ваше внимание: фокусы и трюки показывают только
+          те животные, которые поддаются дрессировке. Но в нашем шоу есть и не дрессируемые существа – для них
+          отведена особая роль. Они, к примеру, могут эффектно возникать на сцене из специальных волшебных ящиков.</p>
+
+        <p class="single__text text text--bold">
+          Сегодня в шоу белых зверей активно участвуют 20 очаровательных представителей животного мира:</p>
+
+        <ul class="single__list list-reset">
+          <li class="single__item">ежики </li>
+          <li class="single__item">нутрия</li>
+          <li class="single__item">морская свинка</li>
+          <li class="single__item">голубь</li>
+          <li class="single__item">змея</li>
+          <li class="single__item">улитки</li>
+          <li class="single__item">кролик</li>
+          <li class="single__item">шиншилла</li>
+          <li class="single__item">кошка</li>
+          <li class="single__item">агама</li>
+          <li class="single__item">хомяк</li>
+          <li class="single__item">крысы</li>
+          <li class="single__item">собака</li>
+          <li class="single__item">курочка</li>
+          <li class="single__item">лягушка</li>
+          <li class="single__item">эублефар</li>
+          <li class="single__item">перепел</li>
+        </ul>
+
+        <p class="single__text text text--bold">
+          Продолжительность программы – 40 мин.
+        </p>
+
+        <p class="single__text text text--bold">
+          Рекомендованный возраст детей – от 4-х лет.
+        </p>
+
+        <p class="single__text text text--bold">
+          Стоимость программы - 25 000₽.
+        </p>
+
+        <p class="single__text text">
+          Уважаемые клиенты, обращаем Ваше внимание, что стоимость любой шоу - программы, с участием животных, в
+          субботу и воскресенье, а также, в праздничные дни, выше на 2000 ₽.</p>
+
+        <p class="single__text text">
+          Вы не только платите больше, но и получаете больше!<br>
+          К каждой программе прилагается одно бонусное животное, а также, уникальный подарок от бренда ANNA KRANZ.</p>
+
+        <p class="single__text text">
+          Бонусное животное заранее не согласовывается.
+        </p>
+
+        <p class="single__text text">
+          Гарантируем – наше выступление приведет в восторг всех присутствующих и надолго запомнится! Звоните и
+          оставляйте заявки прямо сейчас!
+        </p>
+
+        <p class="single__text text">
+          Заказывая программу у нас, Вы получаете только самое лучшее! В нашем цирке 126 животных личного состава, мы
+          не перепродаем чужие программы, а работаем лично! Шикарный реквизит, музыкальное сопровождение номеров,
+          эксклюзивные костюмы, анимационная подача шоу-программ... — нам есть чем Вас удивить! Для полного
+          взаимопонимания, руководитель проекта — Анна Кранц, общается с клиентами лично. Задавайте свои вопросы по
+          телефону <a href="tel:84999920941" class="text text--bold">8 (499) 992 09 41</a><br>
+          <span class="single__text text text--mg">Мы Вам рады!</span>
+        </p>
+        </p>
+      </div>
+
+      <div class="single__wrap-image image-slider">
+        <div class="single__image-slider image-slider__slider swiper">
+          <div class="image-slider__wrapper swiper-wrapper">
+
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__wrap-img">
+                <img src="static/img/image-slider/image-1.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__wrap-img">
+                <img src="static/img/image-slider/image-2.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__wrap-img">
+                <img src="static/img/image-slider/image-3.png" alt="">
+              </div>
+            </div>
+            <!--/swiper-slide-->
+          </div>
+          <!--/swiper-wrapper-->
+        </div>
+        <div class="image-slider__pagination slider-pagination"></div>
+        <!--/swiper-->
+        <div class="image-slider__box-btn btn-box">
+          <div class="image-slider__btn-prev btn-prev">
+          </div>
+          <div class="image-slider__btn-next btn-next">
+          </div>
+        </div>
+        <!-- /image-slider__box-btn -->
+      </div>
+      <!--/single__wrap-image-->
+
+      <div class="single__wrap-btn">
+        <button type="button" class="single__btn btn btn-reset">Заказать</button>
+      </div>
+      <div class="single__tinsel tinsel">
+        <span class="tinsel__left"></span>
+        <span class="tinsel__right"></span>
+      </div>
+    </section>
+
+    <section class="like">
+      <div class="like__container container">
+        <h2 class="like__title">Также вам могут<br> понравиться</h2>
+        <div class="like__slider cards-slider swiper">
+          <div class="cards-slider__wrapper swiper-wrapper">
+
+            <div class="cards-slider__slide swiper-slide">
+              <a href="#" class="cards__card card">
+                <div class="card__wrap-img">
+                  <img class="card__img" src="static/img/cards/1.png" alt="Царский цирк">
+                </div>
+                <div class="card__desc">
+                  <p class="card__title title-2">Царский цирк</p>
+                  <div class="card__desc-content">
+                    <span class="card__desc-text card__desc-text--time">60 минут</span>
+                    <span class="card__desc-text card__desc-text--age">от 2-х лет</span>
+                    <span class="card__desc-cost">17 000 ₽</span>
+                  </div>
+                </div>
+                <span class="card__dot-left"></span>
+                <span class="card__dot-right"></span>
+              </a>
+            </div>
+            <!--/swiper-slide-->
+
+            <div class="cards-slider__slide swiper-slide">
+              <a href="#" class="cards__card card">
+                <div class="card__wrap-img">
+                  <img class="card__img" src="static/img/cards/2.png" alt="Дрессированный баран">
+                </div>
+                <div class="card__desc">
+                  <p class="card__title title-2">Дрессированный баран</p>
+                  <div class="card__desc-content">
+                    <span class="card__desc-text card__desc-text--time">60 минут</span>
+                    <span class="card__desc-text card__desc-text--age">от 2-х лет</span>
+                    <span class="card__desc-cost">17 000 ₽</span>
+                  </div>
+                </div>
+                <span class="card__dot-left"></span>
+                <span class="card__dot-right"></span>
+              </a>
+            </div>
+            <!--/swiper-slide-->
+
+            <div class="cards-slider__slide swiper-slide">
+              <a href="#" class="cards__card card">
+                <div class="card__wrap-img">
+                  <img class="card__img" src="static/img/cards/3.png" alt="Дрессированный олень">
+                </div>
+                <div class="card__desc">
+                  <p class="card__title title-2">Дрессированный олень</p>
+                  <div class="card__desc-content">
+                    <span class="card__desc-text card__desc-text--time">60 минут</span>
+                    <span class="card__desc-text card__desc-text--age">от 2-х лет</span>
+                    <span class="card__desc-cost">17 000 ₽</span>
+                  </div>
+                </div>
+                <span class="card__dot-left"></span>
+                <span class="card__dot-right"></span>
+              </a>
+            </div>
+            <!--/swiper-slide-->
+
+          </div>
+          <!--/swiper-wrapper-->
+        </div>
+        <!--/swiper-->
+        <div class="like__slider-box-btn btn-box">
+          <div class="like__slider-btn-prev btn-prev">
+          </div>
+          <div class="like__slider-btn-next btn-next">
+          </div>
+        </div>
+        <!-- /cards__slider-box-btn -->
+
+        <div class="like__wrap-btn">
+          <button type="button" class="like__btn btn btn-reset">Все программы</button>
+        </div>
+      </div>
+      <!--/container-->
+      <div class="like__tinsel tinsel">
+        <span class="tinsel__left"></span>
+        <span class="tinsel__right"></span>
+      </div>
+    </section>
+    <!--/like-->
+
+    <section class="reviews-slider">
+      <div class="container">
+        <h2 class="reviews-slider__title title-3">Отзывы</h2>
+
+        <div class="reviews-slider__swiper swiper">
+          <div class="reviews-slider__wrapper swiper-wrapper">
+
+            <div class="reviews-slider__slide swiper-slide">
+              <div class="reviews-slider__wrap-img">
+                <img src="static/img/reviews/img-1.png" alt="Отзыв-1">
+              </div>
+            </div>
+
+            <div class="reviews-slider__slide swiper-slide">
+              <div class="reviews-slider__wrap-img">
+                <img src="static/img/reviews/img-2.png" alt="Отзыв-2">
+              </div>
+            </div>
+
+            <div class="reviews-slider__slide swiper-slide">
+              <div class="reviews-slider__wrap-img">
+                <img src="static/img/reviews/img-3.png" alt="Отзыв-1">
+              </div>
+            </div>
+
+          </div>
+          <!--/swiper-wrapper-->
+
+          <div class="reviews-slider__pagination slider-pagination"></div>
+        </div>
+        <!--/swiper-container-->
+
+      </div>
+      <!--container-->
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__top">
+      <nav class="footer__nav nav">
+        <ul class="footer__nav-list nav__list list-reset">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Гастроли</a></li>
+          <li class="nav__item"><a href="programs.html" class="nav__link">Программы</a></li>
+          <li class="nav__item"><a href="partners.html" class="nav__link">Наши партнеры</a></li>
+          <li class="nav__item"><a href="media.html" class="nav__link">Медийность</a></li>
+          <li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="about-us.html" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="cooperation.html" class="nav__link">Сотрудничество</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__nav-md nav">
+        <ul class="footer__nav-list nav__list list-reset">
+          <li class="nav__item"><a href="tour.html" class="nav__link">Гастроли</a></li>
+          <li class="nav__item"><a href="author-programs.html" class="nav__link">Программы</a></li>
+          <li class="nav__item"><a href="reviews-gallery.html" class="nav__link">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" class="footer__wrap-logo" aria-label="Логотип">
+        <img class="footer__logo" src="static/img/logo/logo-footer.png" alt="Логотип">
+      </a>
+      <div class="footer__social social">
+        <a href="#" class="social__link" aria-label="Инстаграм">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#insta"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link" aria-label="Телеграм">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#teleg"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link" aria-label="Вконтакте">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link" aria-label="Одноклассники">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#ok"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__phone-adress phone-adress">
+        <a class="phone-adress__text" href="tel:+74951012346">+7 (495) 101–23–46
+        </a>
+        <span class="phone-adress__text">Москва, гастроли
+        </span>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__copy-text">Дрессированные животные © 2015-2021.<br> Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>
