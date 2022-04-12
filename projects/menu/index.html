@@ -18,30 +18,31 @@
   <link rel="stylesheet" href="./static/css/libs.min.css">
   <link rel="stylesheet" href="./static/css/main.min.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="" class="header__lang">RU</a>
-        <div class="header__lang-hidden hide">
-          <ul class="nav__list list-reset">
-            <li class="nav__item">
-              <a href="" class="nav__link">Английский</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Китайский</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Корейский</a>
-            </li>
-          </ul>
-        </div>
-        <a href="favourite.html" class="header__heart">
-          <svg aria-hidden="true">
-            <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
-          </svg>
-        </a>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="" class="header__lang">RU</a>
+      <div class="header__lang-hidden hide">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="" class="nav__link">Английский</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Китайский</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Корейский</a>
+          </li>
+        </ul>
+      </div>
+      <a href="favourite.html" class="header__heart">
+        <svg aria-hidden="true">
+          <use xlink:href="static/img/symbol/sprite.svg#heart-solid"></use>
+        </svg>
+        <span class="header__heart-count">0</span>
+      </a>
+      <div class="header__wrapper-nav">
         <nav class="header__nav nav">
           <ul class="nav__list list-reset" data-da=".header__nav-hidden,1040, first" data-da=".header__nav,576, first">
             <li class="nav__item"><a href="#cold-snack" class="nav__link active">ХОЛОДНЫЕ ЗАКУСКИ</a></li>
@@ -50,6 +51,9 @@
             <li class="nav__item"><a href="#chinkali" class="nav__link">ХИНКАЛИ (цена за 1 шт.)</a></li>
             <li class="nav__item"><a href="" class="nav__link">ПАСТА</a></li>
           </ul>
+          <div class="nav__icon icon-nav">
+            <span></span>
+          </div>
         </nav>
         <a href="" class="header__btn">Ещё</a>
         <div class="header__nav-hidden hide">
@@ -69,561 +73,556 @@
           </ul>
         </div>
       </div>
-
     </div>
-  </header>
+
+  </div>
+</header>
 
 
-  <main class="main">
-    <!-- //////////////////////////////////////////////////////////  -->
-    <div class="container">
-      <section class="catalog">
-        <div class="catalog__block active-block" id="cold-snack">
-          <div class="catalog__header active">ХОЛОДНЫЕ ЗАКУСКИ</div>
-          <div class="catalog__body">
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Аджапсандали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">440 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+    <section class="catalog">
+      <div class="catalog__block active-block" id="cold-snack">
+        <div class="catalog__header active">ХОЛОДНЫЕ ЗАКУСКИ</div>
+        <div class="catalog__body">
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Аджапсандали</div>
+                <div class="card__heart" aria-label="heart">
                 </div>
-                <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
-                  чеснок, перец чили, кинза, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/1.jpg" alt="Фото">
+                <div class="card__totals">
+                  <div class="card__price">440 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
                 </div>
               </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">650 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 270г</div>
-                  </div>
-                </div>
-                <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/2.jpg" alt="Фото">
-                </div>
+              <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
+                чеснок, перец чили, кинза, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/1.jpg" alt="Фото">
               </div>
             </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Ассорти пхали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">890 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 350г</div>
-                  </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
+                <div class="card__heart" aria-label="heart">
                 </div>
-                <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
-                  перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль,
-                  уцхо-сунели
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/3.jpg" alt="Фото">
+                <div class="card__totals">
+                  <div class="card__price">650 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 270г</div>
                 </div>
               </div>
+              <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/2.jpg" alt="Фото">
+              </div>
             </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Ассорти пхали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">890 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 350г</div>
+                </div>
+              </div>
+              <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
+                перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль, уцхо-сунели
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
 
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Аджапсандали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">440 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Аджапсандали</div>
+                <div class="card__heart" aria-label="heart">
                 </div>
-                <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
-                  чеснок, перец чили, кинза, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/1.jpg" alt="Фото">
+                <div class="card__totals">
+                  <div class="card__price">440 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
                 </div>
               </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">650 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 270г</div>
-                  </div>
-                </div>
-                <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/2.jpg" alt="Фото">
-                </div>
+              <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
+                чеснок, перец чили, кинза, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/1.jpg" alt="Фото">
               </div>
             </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Ассорти пхали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">890 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 350г</div>
-                  </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
+                <div class="card__heart" aria-label="heart">
                 </div>
-                <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
-                  перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль,
-                  уцхо-сунели
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/3.jpg" alt="Фото">
+                <div class="card__totals">
+                  <div class="card__price">650 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 270г</div>
                 </div>
+              </div>
+              <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Ассорти пхали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">890 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 350г</div>
+                </div>
+              </div>
+              <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
+                перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль, уцхо-сунели
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/3.jpg" alt="Фото">
               </div>
             </div>
           </div>
         </div>
-        <!--/catalog__block-->
-
-        <div class="catalog__block" id="salats">
-          <div class="catalog__header active">САЛАТЫ</div>
-          <div class="catalog__body">
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Оливье классический</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">460 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 250г</div>
-                  </div>
-                </div>
-                <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
-                  майонез, укроп, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат греческий</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">520 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 240г</div>
-                  </div>
-                </div>
-                <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
-                  перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат по-грузински</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">450 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
-                  специи
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Аджапсандали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">440 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
-                  чеснок, перец чили, кинза, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">650 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 270г</div>
-                  </div>
-                </div>
-                <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Ассорти пхали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">890 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 350г</div>
-                  </div>
-                </div>
-                <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
-                  перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль,
-                  уцхо-сунели
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/catalog__block-->
-
-        <div class="catalog__block" id="cheese">
-          <div class="catalog__header active">СЫРЫ ИЗ НАШЕЙ СЫРОВАРНИ</div>
-          <div class="catalog__body">
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Оливье классический</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">460 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 250г</div>
-                  </div>
-                </div>
-                <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
-                  майонез, укроп, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат греческий</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">520 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 240г</div>
-                  </div>
-                </div>
-                <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
-                  перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат по-грузински</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">450 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
-                  специи
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Аджапсандали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">440 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
-                  чеснок, перец чили, кинза, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">650 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 270г</div>
-                  </div>
-                </div>
-                <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Ассорти пхали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">890 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 350г</div>
-                  </div>
-                </div>
-                <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
-                  перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль,
-                  уцхо-сунели
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/catalog__block-->
-
-        <div class="catalog__block" id="chinkali">
-          <div class="catalog__header active">ХИНКАЛИ (цена за 1 шт.)</div>
-          <div class="catalog__body">
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Оливье классический</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">460 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 250г</div>
-                  </div>
-                </div>
-                <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
-                  майонез, укроп, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат греческий</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">520 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 240г</div>
-                  </div>
-                </div>
-                <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
-                  перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Салат по-грузински</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">450 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
-                  специи
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/salat3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Аджапсандали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">440 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 200г</div>
-                  </div>
-                </div>
-                <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
-                  чеснок, перец чили, кинза, соль, перец черный
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/1.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">650 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 270г</div>
-                  </div>
-                </div>
-                <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/2.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-            <div class="catalog__item card" data-modal>
-              <div class="card__wrapper">
-                <div class="card__content">
-                  <div class="card__name">Ассорти пхали</div>
-                  <div class="card__heart" aria-label="heart">
-                  </div>
-                  <div class="card__totals">
-                    <div class="card__price">890 <span class="card__currency">₽</span></div>
-                    <div class="card__weight">&nbsp;<span>/</span> 350г</div>
-                  </div>
-                </div>
-                <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
-                  перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль,
-                  уцхо-сунели
-                </p>
-                <div class="card__thumb">
-                  <img src="static/img/photos/3.jpg" alt="Фото">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/catalog__block-->
-      </section>
-    </div>
-    <!--/container-->
-  </main>
-
-  <div class="modal hide">
-    <div class="modal__dialog">
-      <div class="modal__wrapper">
-        <div data-close class="modal__close"></div>
-        <div class="modal__thumb">
-          <img src="static/img/photos/1.jpg" alt="Фото">
-        </div>
-        <p class="modal__desc">баклажаны, перец болгарский, масло растительное, томат, лук репчатый, чеснок, перец чили,
-          кинза, соль, перец черный
-        </p>
-        <div class="modal__properties">
-          <div class="modal__property">
-            <div class="modal__property-dots"></div>
-            <div class="modal__property-text">
-              <span class="modal__property-name">Калорийность</span>
-              <span class="modal__property-value">198</span>
-            </div>
-          </div>
-          <div class="modal__property">
-            <div class="modal__property-dots"></div>
-            <div class="modal__property-text">
-              <span class="modal__property-name">Белки</span>
-              <span class="modal__property-value">4</span>
-            </div>
-          </div>
-          <div class="modal__property">
-            <div class="modal__property-dots"></div>
-            <div class="modal__property-text">
-              <span class="modal__property-name">Жиры</span>
-              <span class="modal__property-value">12</span>
-            </div>
-          </div>
-          <div class="modal__property">
-            <div class="modal__property-dots"></div>
-            <div class="modal__property-text">
-              <span class="modal__property-name">Углеводы</span>
-              <span class="modal__property-value">18</span>
-            </div>
-          </div>
-        </div>
-        <div class="modal__content">
-          <div class="modal__name">
-            Аджапсандали&nbsp;
-            <span>/ 200г</span>
-          </div>
-          <div class="modal__price">440 <span class="modal__currency">₽</span></div>
-        </div>
-
       </div>
+      <!--/catalog__block-->
+
+      <div class="catalog__block" id="salats">
+        <div class="catalog__header active">САЛАТЫ</div>
+        <div class="catalog__body">
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Оливье классический</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">460 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 250г</div>
+                </div>
+              </div>
+              <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
+                майонез, укроп, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат греческий</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">520 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 240г</div>
+                </div>
+              </div>
+              <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
+                перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат по-грузински</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">450 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
+                специи
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Аджапсандали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">440 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
+                чеснок, перец чили, кинза, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">650 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 270г</div>
+                </div>
+              </div>
+              <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Ассорти пхали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">890 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 350г</div>
+                </div>
+              </div>
+              <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
+                перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль, уцхо-сунели
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/catalog__block-->
+
+      <div class="catalog__block" id="cheese">
+        <div class="catalog__header active">СЫРЫ ИЗ НАШЕЙ СЫРОВАРНИ</div>
+        <div class="catalog__body">
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Оливье классический</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">460 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 250г</div>
+                </div>
+              </div>
+              <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
+                майонез, укроп, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат греческий</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">520 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 240г</div>
+                </div>
+              </div>
+              <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
+                перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат по-грузински</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">450 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
+                специи
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Аджапсандали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">440 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
+                чеснок, перец чили, кинза, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">650 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 270г</div>
+                </div>
+              </div>
+              <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Ассорти пхали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">890 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 350г</div>
+                </div>
+              </div>
+              <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
+                перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль, уцхо-сунели
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/catalog__block-->
+
+      <div class="catalog__block" id="chinkali">
+        <div class="catalog__header active">ХИНКАЛИ (цена за 1 шт.)</div>
+        <div class="catalog__body">
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Оливье классический</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">460 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 250г</div>
+                </div>
+              </div>
+              <p class="card__descr">картофель, морковь, колбаса, огурцы свежие, огурцы соленые, яйцо куриное,
+                майонез, укроп, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат греческий</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">520 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 240г</div>
+                </div>
+              </div>
+              <p class="card__descr">лолла россо, латук, радичио, руккола, фризе, помидоры, огурцы, болгарский
+                перец, лук красный, маслины, оливки, масло оливковое, уксус бальзамический, фета, гренки хлебные
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Салат по-грузински</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">450 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">огурцы, помидоры, лук красный, зелень, оливковое масло, винный уксус,
+                специи
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/salat3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Аджапсандали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">440 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 200г</div>
+                </div>
+              </div>
+              <p class="card__descr">баклажаны, перец болгарский, масло растительное, томат, лук репчатый,
+                чеснок, перец чили, кинза, соль, перец черный
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/1.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Моцарелла с помидорами и соусом из базилика</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">650 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 270г</div>
+                </div>
+              </div>
+              <p class="card__descr">моцарелла, помидоры, романо, соус песто, бальзамический крем, орегано
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/2.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item card" data-modal>
+            <div class="card__wrapper">
+              <div class="card__content">
+                <div class="card__name">Ассорти пхали</div>
+                <div class="card__heart" aria-label="heart">
+                </div>
+                <div class="card__totals">
+                  <div class="card__price">890 <span class="card__currency">₽</span></div>
+                  <div class="card__weight">&nbsp;<span>/</span> 350г</div>
+                </div>
+              </div>
+              <p class="card__descr">фасоль красная, фасоль зеленая, шпинат, свекла, баклажаны, орех грецкий,
+                перец чили, чеснок, лук репчатый, паста томатная, кинза, базилик, масло растительное, соль, уцхо-сунели
+              </p>
+              <div class="card__thumb">
+                <img src="static/img/photos/3.jpg" alt="Фото">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/catalog__block-->
+    </section>
+  </div>
+  <!--/container-->
+</main>
+
+<div class="modal hide">
+  <div class="modal__dialog">
+    <div class="modal__wrapper">
+      <div data-close class="modal__close"></div>
+      <div class="modal__thumb">
+        <img src="static/img/photos/1.jpg" alt="Фото">
+      </div>
+      <p class="modal__desc">баклажаны, перец болгарский, масло растительное, томат, лук репчатый, чеснок, перец чили,
+        кинза, соль, перец черный
+      </p>
+      <div class="modal__properties">
+        <div class="modal__property">
+          <div class="modal__property-dots"></div>
+          <div class="modal__property-text">
+            <span class="modal__property-name">Калорийность</span>
+            <span class="modal__property-value">198</span>
+          </div>
+        </div>
+        <div class="modal__property">
+          <div class="modal__property-dots"></div>
+          <div class="modal__property-text">
+            <span class="modal__property-name">Белки</span>
+            <span class="modal__property-value">4</span>
+          </div>
+        </div>
+        <div class="modal__property">
+          <div class="modal__property-dots"></div>
+          <div class="modal__property-text">
+            <span class="modal__property-name">Жиры</span>
+            <span class="modal__property-value">12</span>
+          </div>
+        </div>
+        <div class="modal__property">
+          <div class="modal__property-dots"></div>
+          <div class="modal__property-text">
+            <span class="modal__property-name">Углеводы</span>
+            <span class="modal__property-value">18</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal__content">
+        <div class="modal__name">
+          Аджапсандали&nbsp;
+          <span>/ 200г</span>
+        </div>
+        <div class="modal__price">440 <span class="modal__currency">₽</span></div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <script src="./static/js/libs.min.js"></script>
   <script src="./static/js/main.min.js"></script>
 </body>
-
 </html>
