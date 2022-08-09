@@ -208,6 +208,11 @@ img {
   display: none;
 }
 
+.about-me__title-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .about-me__list {
   max-width: 654px;
 }
